@@ -1,0 +1,17 @@
+@font-face {
+    font-family: "RockoUltraFLF";
+    src: url("../font/RockoUltraFLF-Bold.ttf");
+}
+@font-face {
+    font-family: "RockoFLF";
+    src: url("../font/RockoFLF.ttf");
+}
+
+.hidden {
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
