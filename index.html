@@ -14,30 +14,37 @@
   <h1>Siquet Amélie</h1>
   <nav>
     <h1 class="hidden">Navigation</h1>
-    <a href="index.html">Sur moi</a>
-    <a>Events?</a>
-    <a href="index.html">Compétences</a>
-    <a href="index.html">Plus</a>
+    <a href="index.html" title="">Sur moi</a>
+    <a href="index.html" title="">Events</a>
+    <a href="index.html" title="Aller vers mes compétences">Compétences</a>
+    <a href="index.html" title="Aller vers mes projets">Projets</a>
+    <a href="index.html" title="Aller vers mon projet portfolio">Portfolio</a>
+    <a href="index.html" title="Aller vers mon projet client">Projet Client</a>
   </nav>
   <a> Contact </a>
 </header>
 <main>
-
   <section>
     <h1 class="hidden">Sur moi</h1>
     <a>
       <h2>Amélie Siquet</h2>
-      <img src="">
+      <figure>
+        <img src="" alt="" width="" height="">
+        <figcaption class="hidden"></figcaption>
+      </figure>
     </a>
     <div>
       <h2>Projets</h2>
       <p> Mes projets personnels</p>
-      <a>Portfolio</a>
-      <a>Projet Client</a>
+      <a href="" title="Aller vers mon projet portfolio">Portfolio</a>
+      <a href="" title="Aller vers mon projet client">Projet Client</a>
     </div>
     <a>
       <h2>Junior Developper</h2>
-      <img src="">
+      <figure>
+        <img src="" alt="" width="" height="">
+        <figcaption class="hidden"></figcaption>
+      </figure>
     </a>
   </section>
   <section>
@@ -45,43 +52,83 @@
     <h2>Ma formation</h2>
     <div>
       <h3>App Development</h3>
-      <h4>2025-2026</h4>
+      <time datetime="2026-10-20">2026</time>
       <p>Hybrid Heroes GmbH</p>
-      <p>10823 Berlin</p>
-      <img src="">
+      <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+        <span itemprop="postalCode">10823</span>
+        <span itemprop="addressLocality">Berlin</span>
+      </address>
+      <figure>
+        <img src="" alt="" width="" height="">
+        <figcaption class="hidden"></figcaption>
+      </figure>
     </div>
     <div>
       <h3>Bachelier option web</h3>
-      <h4>2022-2025</h4>
+      <time datetime="2025-06-30">2025</time>
       <p>Haute École de la province de Liège</p>
-      <p>4100 Seraing</p>
-      <img src="">
+      <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+        <span itemprop="postalCode">4100</span>
+        <span itemprop="addressLocality">Seraing</span>
+      </address>
+      <figure>
+        <img src="" alt="" width="" height="">
+        <figcaption class="hidden"></figcaption>
+      </figure>
     </div>
     <div>
       <h3>CESS</h3>
-      <h4>2022</h4>
+      <time datetime="2022-06-30">2022</time>
       <p>Maria Goretti Sekundarschule</p>
-      <p>4780 Sankt-Vith</p>
-      <img src="">
+      <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+        <span itemprop="postalCode">4780</span>
+        <span itemprop="addressLocality">Sankt-Vith</span>
+      </address>
+      <figure>
+        <img src="" alt="" width="" height="">
+        <figcaption class="hidden"></figcaption>
+      </figure>
     </div>
   </section>
   <section>
     <h1 class="hidden">Fun et Appli?</h1>
     <h2>Fun et Appli?</h2>
     <h3>Ma nouvelle application</h3>
-    <p>Cette application vous permet de faire blablabla Et de blabblaba avec vos amis</p>
-    <a href="">App Store</a>
-    <a href="">Play Store</a>
+    <div>
+      <figure>
+        <img src="img/app.png" alt="Ma nouvelle application" width="1350" height="750">
+        <figcaption class="hidden">Ma nouvelle application</figcaption>
+      </figure>
+      <p>Cette application vous permet de faire blablabla Et de blabblaba avec vos amis</p>
+      <a href="">App Store</a>
+      <a href="">Play Store</a>
+    </div>
   </section>
   <section>
     <h1 class="hidden">Word Skills</h1>
     <h2>Word Skills 2024</h2>
+    <figure>
+      <img src="img/Wordskills.png" alt="Logo Wordskills" width="550" height="600">
+      <figcaption class="hidden">Le logo de Wordskills</figcaption>
+    </figure>
+    <figure>
+      <img src="img/LOGO.svg" alt="Mon logo personnel" width="145" height=145">
+      <figcaption class="hidden">Mon logo personnel</figcaption>
+    </figure>
     <p>Ich schaffte es auf den … Platz!</p>
     <a href="">Savoir plus</a>
   </section>
   <section>
     <h1 class="hidden">Citation</h1>
     <h2>Citation</h2>
+    <figure>
+      <img src="" alt="" width="550" height="600">
+      <figcaption class="hidden"></figcaption>
+    </figure>
+    <figure>
+      <img src="img/LOGO.svg" alt="Mon logo personnel" width="145" height=145">
+      <figcaption class="hidden">Mon logo personnel</figcaption>
+    </figure>
     <p>Ich schaffte es auf den … Platz!</p>
     <a href="">Savoir plus</a>
   </section>
@@ -90,17 +137,26 @@
     <h2>Mes compétences</h2>
     <a href="index.html">Voir tout</a>
     <div>
-      <img src="">
+      <figure>
+        <img src="img/HTML.png" alt="Logo HTML" width="345" height="320">
+        <figcaption class="hidden"></figcaption>
+      </figure>
       <a></a>
       <p>Créer et concevoir des pages web en définissant la …</p>
     </div>
     <div>
-      <img src="">
+      <figure>
+        <img src="img/CSS.png" alt="Logo CSS" width="345" height="320">
+        <figcaption class="hidden"></figcaption>
+      </figure>
       <a></a>
       <p>Embellir et styliser les pages web en contrôlant la …</p>
     </div>
     <div>
-      <img src="">
+      <figure>
+        <img src="img/JAVASCRIPT.png" alt="Logo JavaScript" width="345" height="320">
+        <figcaption class="hidden"></figcaption>
+      </figure>
       <a></a>
       <p>Rendre mes pages web interactives en ajoutant des …</p>
     </div>
@@ -108,17 +164,34 @@
   <section>
     <h1 class="hidden">Contact</h1>
     <h2>Contact</h2>
-    <img src="">
-    <img src="">
-    <h3>Par téléphone</h3>
-    <p>Vous pouvez m’appeler au 0475 642 367</p>
-    <h3>Par mail</h3>
-    <p>Vous pouvez m’écrire sur ameliesiquet@gmail.com</p>
+    <figure>
+      <img src="img/Map.png" alt="Carte pour trouver mon adress" width="430" height="430">
+      <figcaption class="hidden"></figcaption>
+    </figure>
+    <figure>
+      <img src="img/LOGO.svg" alt="Mon logo personnel" width="140" height="140">
+      <figcaption class="hidden"></figcaption>
+    </figure>
+    <ul>
+      <li>
+        <h3>Par téléphone</h3>
+        <p>Vous pouvez m’appeler au</p>
+        <address>0475 642 367</address>
+      </li>
+      <li>
+        <h3>Par mail</h3>
+        <p>Vous pouvez m’écrire sur</p>
+        <address>ameliesiquet@gmail.com</address>
+      </li>
+    </ul>
     <a href="">Contact</a>
   </section>
 </main>
 <footer>
-  <img src="">
+  <figure>
+    <img src="img/LOGO.svg" alt="Mon logo personnel" width="285" height=285"">
+    <figcaption class="hidden"></figcaption>
+  </figure>
   <a href="index.html">Sur moi</a>
   <a href="index.html">Events</a>
   <a href="index.html">Compétences</a>
