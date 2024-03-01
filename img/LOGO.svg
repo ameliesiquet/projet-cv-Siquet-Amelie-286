@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Ebene_1" data-name="Ebene 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 285 285">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #ed6e20;
+      }
+
+      .cls-2 {
+        fill: #e62887;
+      }
+
+      .cls-3 {
+        font-family: RockoUltraFLF-Bold, RockoUltraFLF;
+        font-size: 95px;
+        font-weight: 700;
+      }
+
+      .cls-4 {
+        fill: #f5f4f5;
+        stroke-width: 0px;
+      }
+    </style>
+  </defs>
+  <circle class="cls-4" cx="142.1" cy="142.51" r="142.5"/>
+  <text class="cls-3" transform="translate(76.89 194.02) rotate(-19.99)"><tspan class="cls-1" x="0" y="0">A</tspan><tspan class="cls-2" x="72.29" y="0">.</tspan><tspan class="cls-1" x="97.94" y="0">S</tspan></text>
+</svg>
