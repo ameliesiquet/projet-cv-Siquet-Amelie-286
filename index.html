@@ -14,12 +14,29 @@
   <h1>Siquet Amélie</h1>
   <nav>
     <h1 class="hidden">Navigation</h1>
-    <a href="index.html" title="Savoir plus sur moi">Sur moi</a>
-    <a href="index.html" title="">Events</a>
-    <a href="index.html" title="Aller vers mes compétences">Compétences</a>
-    <a href="index.html" title="Aller vers mes projets">Projets</a>
-    <a href="index.html" title="Aller vers mon projet portfolio">Portfolio</a>
-    <a href="index.html" title="Aller vers mon projet client">Projet Client</a>
+    <ul>
+      <li><a href="index.html" title="Savoir plus sur moi">Sur moi</a></li>
+      <li><a href="index.html" title="">Events</a></li>
+      <li><a href="index.html" title="Aller vers mes compétences">Compétences</a></li>
+    </ul>
+    <div class="clickable-dropdown">
+      <a class="dropbtn" href="index.html" title="Aller vers mes projets">Projets</a>
+      <ul class="dropdown-content">
+        <li><a href="index.html" title="Aller vers mon projet client">Projet Client</a></li>
+        <li><a href="index.html" title="Aller vers mon projet portfolio">Portfolio</a>
+        </li>
+      </ul>
+    </div>
+    <div class="language_dropdown">
+      <a href="">
+        <img src="" alt="Le drapeau français" width="50" height="30">
+      </a>
+      <div class="dropdown-content">
+        <a href="#">
+          <img src="" alt="Le drapeau allemand" width="50" height="30">
+        </a>
+      </div>
+    </div>
     <a href="index.html" title="Contactez-moi!">Contact</a>
   </nav>
 </header>
@@ -29,7 +46,7 @@
     <a>
       <h2>Amélie Siquet</h2>
       <figure>
-        <img src="" alt="" width="" height="">
+        <img src="img/Me.png" alt="Une photo de moi" width="775" height="750">
         <figcaption class="hidden"></figcaption>
       </figure>
     </a>
@@ -42,7 +59,7 @@
     <a>
       <h2>Junior Developper</h2>
       <figure>
-        <img src="" alt="" width="" height="">
+        <img src="img/JuniorDevelopper.svg" alt="Une image de mon Projet CV" width="550" height="440">
         <figcaption class="hidden"></figcaption>
       </figure>
     </a>
@@ -91,14 +108,16 @@
     </div>
   </section>
   <section>
-    <h1 class="hidden">Fun et Appli?</h1>
-    <h2>Fun et Appli?</h2>
-    <h3>Ma nouvelle application</h3>
-    <div>
+    <article>
       <figure>
-        <img src="img/app.png" alt="Ma nouvelle application" width="1350" height="750">
+        <img src="img/Application.png" alt="Ma nouvelle application" width="350" height="650">
         <figcaption class="hidden">Ma nouvelle application</figcaption>
       </figure>
+    </article>
+    <div>
+      <h1 class="hidden">Fun et Appli?</h1>
+      <h2>Fun et Appli?</h2>
+      <h3>Ma nouvelle application</h3>
       <p>Cette application vous permet de faire blablabla Et de blabblaba avec vos amis</p>
       <a href="">App Store</a>
       <a href="">Play Store</a>
