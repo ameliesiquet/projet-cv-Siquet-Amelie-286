@@ -15,3 +15,163 @@
     white-space: nowrap;
     width: 1px;
 }
+
+*{
+    font-family: RockoFLF;
+}
+
+h1, h2{
+    text-transform: uppercase;
+}
+a{
+    text-decoration: none;
+}
+#title{
+    font-family: RockoUltraFLF;
+    font-size: 45px;
+    color: #FF6E0C;
+    line-height: 90px;
+}
+
+#header{
+    display: flex;
+}
+
+#navigation{
+    display: flex;
+    align-items: center;
+    margin: 0 128px;
+}
+.navigation_list{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+#navigation a{
+    font-family: RockoUltraFLF;
+    font-size: 14px;
+    color: #512D00;
+    text-transform: uppercase;
+}
+.language_dropdown{
+    margin: 0 25px 0 150px;
+}
+#contact-button .contact-button{
+    font-size: 17px;
+    background-color: #FF6E0C;
+    color: white;
+    padding: 16px 40px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 30px;
+}
+
+/*Dropdown-Menü */
+/* ändern von margin padding gucken wie anders machen */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    width: 50px;
+    min-width: 160px;
+    box-shadow: 0 3px 11px -1px rgba(64,73,255,.11);
+    border-radius: 10px;
+    padding: 17px;
+}
+.dropdown-content a{
+    padding: 5px;
+    margin: 5px;
+}
+.dropdown-content a:hover{
+    background-color: #f0f0f0;
+    border-radius: .75em;
+    padding-left: 1em;
+}
+
+
+/* Stil für die sichtbare Schaltfläche */
+.clickable-dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+
+
+.language_dropdown{
+    background-color: #F0F0F0;
+    border-radius: 20px;
+    width: 54px;
+}
+.language_dropdown a{
+    padding: 12px 17px;
+}
+
+#hero{
+    display: grid;
+    width: 80%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 2fr;
+    gap: 25px;
+    margin: auto;
+}
+
+.hero-me{
+    background-color: #DDBD8E;
+    width: 775px;
+    border-radius: 25px;
+    grid-column: 1 / span 1; grid-row: 1 / span 2;
+}
+.hero-me h2{
+    font-family: RockoUltraFLF;
+    font-size: 95px;
+    color: white;
+    max-width: 380px;
+}
+
+.hero-projects{
+    background-color: #F20C90;
+    text-align: center;
+    width: 478px; /* 550-36-36 */
+    padding: 23px 36px;
+    border-radius: 25px;
+    grid-column: 2 / span 1; grid-row: 1 / span 1;
+}
+.hero-projects h2{
+    font-family: RockoUltraFLF;
+    font-size: 75px;
+    color: white;
+}
+.hero-projects p{
+    font-family: RockoFLF;
+    font-size: 17px;
+    color: white;
+}
+.hero-projects a{
+    font-family: RockoUltraFLF;
+    font-size: 17px;
+    text-transform: uppercase;
+    width: 230px;
+    color: white;
+    background-color: #F950AD;
+    padding: 24px 0;
+    border-radius: 15px;
+    display: inline-block;
+}
+
+
+.hero-junior{
+    background-color: #99D6EA;
+    width: 490px; /* 550-30-30 */
+    text-align: center;
+    padding: 23px 30px;
+    border-radius: 25px;
+    grid-column: 2 / span 1; grid-row: 2 / span 1;
+}
+.hero-junior h2{
+    font-family: RockoUltraFLF;
+    font-size: 75px;
+    color: white;
+}
+
