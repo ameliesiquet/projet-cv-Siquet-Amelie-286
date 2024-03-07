@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -7,219 +7,272 @@
   <meta name="description" content="Vous pouvez découvrir mon parcours et mes réalisations sur mon site CV.">
   <meta name="author" content="Amélie Siquet">
   <title>Siquet Amélie</title>
+  <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/main.css">
+  <script src="js/main.js"></script>
 </head>
 <body>
-<header>
-  <h1>Siquet Amélie</h1>
-  <nav>
-    <h1 class="hidden">Navigation</h1>
-    <ul>
-      <li><a href="index.html" title="Savoir plus sur moi">Sur moi</a></li>
-      <li><a href="index.html" title="">Events</a></li>
-      <li><a href="index.html" title="Aller vers mes compétences">Compétences</a></li>
+
+<header id="header">
+  <h1 id="title" role="heading" aria-level="1">Siquet Amélie</h1>
+  <nav id="navigation">
+    <h1 class="hidden" role="heading" aria-level="1">Navigation</h1>
+    <ul class="navigation_list">
+      <li>
+        <a href="#hero" title="Savoir plus sur moi">Sur moi</a>
+      </li>
+      <li>
+        <a href="#about" title="Savoir plus sur mes centres d'intérêts">À propos</a>
+      </li>
+      <li>
+        <a href="#skills" title="Aller vers mes compétences">Compétences</a>
+      </li>
+      <li class="clickable-dropdown">
+        <a class="dropbtn" href="index.html" title="Aller vers mes projets">Projets</a>
+        <ul class="dropdown-content" id="dropdownContent">
+          <li><a href="#hero" title="Aller vers mon projet client">Projet Client</a></li>
+          <li><a href="#hero" title="Aller vers mon projet portfolio">Portfolio</a></li>
+        </ul>
+        <svg class="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 5 10" width="5" height="10">
+          <path d="M1 1L4 5 1 9" fill="none" stroke="#512D00" stroke-width="3" stroke-linecap="round"/>
+        </svg>
+      </li>
     </ul>
-    <div class="clickable-dropdown">
-      <a class="dropbtn" href="index.html" title="Aller vers mes projets">Projets</a>
-      <ul class="dropdown-content">
-        <li><a href="index.html" title="Aller vers mon projet client">Projet Client</a></li>
-        <li><a href="index.html" title="Aller vers mon projet portfolio">Portfolio</a>
-        </li>
-      </ul>
-    </div>
+
+
     <div class="language_dropdown">
-      <a href="">
-        <img src="" alt="Le drapeau français" width="50" height="30">
+      <a href="index.html">
+        <img src="img/France.svg" alt="Le drapeau français" width="20" height="13">
       </a>
       <div class="dropdown-content">
-        <a href="#">
-          <img src="" alt="Le drapeau allemand" width="50" height="30">
+        <a href="index.html">
+          <img src="img/Deutschland.svg" alt="Le drapeau allemand" width="20" height="12">
         </a>
       </div>
     </div>
-    <a href="index.html" title="Contactez-moi!">Contact</a>
+    <div id="contact-button">
+      <a class="contact-button" href="#contact" title="Contactez-moi!">Contact</a>
+    </div>
   </nav>
 </header>
+
+
 <main>
-  <section>
-    <h1 class="hidden">Sur moi</h1>
-    <a>
-      <h2>Amélie Siquet</h2>
-      <figure>
-        <img src="img/Me.png" alt="Une photo de moi" width="775" height="750">
-        <figcaption class="hidden"></figcaption>
-      </figure>
-    </a>
-    <div>
-      <h2>Projets</h2>
+  <section id="hero">
+    <h1 class="hidden" role="heading" aria-level="1">Sur moi</h1>
+    <div class="hero-me">
+      <a href="#hero" title="Consulter une photo de moi">
+        <h2 role="heading" aria-level="2">Amélie Siquet</h2>
+        <figure>
+          <img src="img/Moi.png" alt="Une photo de moi" width="775" height="750">
+          <figcaption class="hidden">Une photo de moi</figcaption>
+        </figure>
+      </a>
+    </div>
+
+    <div class="hero-projects">
+      <h2 role="heading" aria-level="2">Projets</h2>
       <p> Mes projets personnels</p>
-      <a href="" title="Aller vers mon projet portfolio">Portfolio</a>
-      <a href="" title="Aller vers mon projet client">Projet Client</a>
+      <a href="#hero" title="Aller vers mon projet portfolio">Portfolio</a>
+      <a href="#hero" title="Aller vers mon projet client">Projet Client</a>
     </div>
-    <a>
-      <h2>Junior Developper</h2>
-      <figure>
-        <img src="img/JuniorDevelopper.svg" alt="Une image de mon Projet CV" width="550" height="440">
-        <figcaption class="hidden"></figcaption>
-      </figure>
-    </a>
+
+    <div class="hero-junior">
+      <a href="#hero" title="Consulter une photo de mon ordinateur">
+        <h2 role="heading" aria-level="2">Junior Developper</h2>
+        <figure>
+          <img src="img/JuniorDevelopper.svg" alt="Une image de mon Projet CV" width="550" height="440">
+          <figcaption class="hidden">Une photo de mon ordinateur avec mon projet CV ouvert</figcaption>
+        </figure>
+      </a>
+    </div>
+
   </section>
-  <section>
-    <h1 class="hidden">Ma formation</h1>
-    <h2>Ma formation</h2>
-    <div>
-      <h3>App Development</h3>
-      <time datetime="2026-10-20">2026</time>
-      <p>Hybrid Heroes GmbH</p>
-      <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-        <span itemprop="postalCode">10823</span>
-        <span itemprop="addressLocality">Berlin</span>
-      </address>
-      <figure>
-        <img src="" alt="" width="" height="">
-        <figcaption class="hidden"></figcaption>
-      </figure>
-    </div>
-    <div>
-      <h3>Bachelier option web</h3>
-      <time datetime="2025-06-30">2025</time>
-      <p>Haute École de la province de Liège</p>
-      <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-        <span itemprop="postalCode">4100</span>
-        <span itemprop="addressLocality">Seraing</span>
-      </address>
-      <figure>
-        <img src="" alt="" width="" height="">
-        <figcaption class="hidden"></figcaption>
-      </figure>
-    </div>
-    <div>
-      <h3>CESS</h3>
-      <time datetime="2022-06-30">2022</time>
-      <p>Maria Goretti Sekundarschule</p>
-      <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-        <span itemprop="postalCode">4780</span>
-        <span itemprop="addressLocality">Sankt-Vith</span>
-      </address>
-      <figure>
-        <img src="" alt="" width="" height="">
-        <figcaption class="hidden"></figcaption>
-      </figure>
-    </div>
+
+
+  <section id="formation">
+    <h1 class="hidden" role="heading" aria-level="1">Ma formation</h1>
+    <h2 role="heading" aria-level="2">Ma formation</h2>
+    <ul class="formation-list">
+      <li class="formation-item">
+        <h3 role="heading" aria-level="3">App Development</h3>
+        <p>Hybrid Heroes GmbH</p>
+        <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span itemprop="postalCode">10823</span>
+          <span itemprop="addressLocality">Berlin</span>
+        </address>
+        <div class="year-circle">
+          <time datetime="2026-10-20">2026</time>
+        </div>
+      </li>
+      <li class="formation-item">
+        <h3 role="heading" aria-level="3">Bachelier option web</h3>
+        <p>Haute École de la province de Liège</p>
+        <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span itemprop="postalCode">4100</span>
+          <span itemprop="addressLocality">Seraing</span>
+        </address>
+        <div class="year-circle">
+          <time datetime="2025-06-30">2025</time>
+        </div>
+      </li>
+      <li class="formation-item">
+        <h3 role="heading" aria-level="3">CESS</h3>
+        <p>Maria Goretti Sekundarschule</p>
+        <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span itemprop="postalCode">4780</span>
+          <span itemprop="addressLocality">Sankt-Vith</span>
+        </address>
+        <div class="year-circle">
+          <time datetime="2022-06-30">2022</time>
+        </div>
+      </li>
+    </ul>
+    <a  class="more" href="#formation"></a>
   </section>
-  <section>
-    <article>
-      <figure>
-        <img src="img/Application.png" alt="Ma nouvelle application" width="350" height="650">
+
+
+  <section id="application">
+    <h1 class="hidden" role="heading" aria-level="1">Fun et Appli?</h1>
+    <figure class="application-img">
+        <img src="img/Application.svg" alt="Ma nouvelle application" width="340" height="650">
         <figcaption class="hidden">Ma nouvelle application</figcaption>
-      </figure>
-    </article>
-    <div>
-      <h1 class="hidden">Fun et Appli?</h1>
-      <h2>Fun et Appli?</h2>
-      <h3>Ma nouvelle application</h3>
-      <p>Cette application vous permet de faire blablabla Et de blabblaba avec vos amis</p>
-      <a href="">App Store</a>
-      <a href="">Play Store</a>
+    </figure>
+    <div class="application-content">
+      <h2 role="heading" aria-level="2">Fun et Appli?</h2>
+      <h3 role="heading" aria-level="3">Ma nouvelle application</h3>
+      <p>Cette application offre des visites audio-accompagnées des quartiers et régions de votre …</p>
+      <a href="https://www.apple.com/befr/app-store/" title="Aller vers le App Store">
+        <figure class="application-download">
+          <img src="img/AppStore.svg" alt="Download on the AppStore" width="183" height="52">
+          <figcaption class="hidden">Download on the AppStore</figcaption>
+        </figure>
+      </a>
+      <a href="https://play.google.com/store/games?hl=fr&gl=US" title="Aller vers le Play Store">
+        <figure class="application-download">
+          <img src="img/GooglePlay.svg" alt="Get it on Google Play" width="183" height="52">
+          <figcaption class="hidden">Get it on Google Play</figcaption>
+        </figure>
+      </a>
     </div>
   </section>
-  <section>
-    <h1 class="hidden">Word Skills</h1>
-    <h2>Word Skills 2024</h2>
-    <figure>
-      <img src="img/WordSkills.svg" alt="Logo Wordskills" width="550" height="600">
-      <figcaption class="hidden">Le logo de Wordskills</figcaption>
-    </figure>
-    <figure>
-      <img src="img/LOGO.svg" alt="Mon logo personnel" width="145" height=145">
-      <figcaption class="hidden">Mon logo personnel</figcaption>
-    </figure>
-    <p>Ich schaffte es auf den … Platz!</p>
-    <a href="">Savoir plus</a>
+
+  <section id="about">
+    <h1 class="hidden">À Propos</h1>
+
+    <article id="accessibility">
+      <h1 class="hidden" role="heading" aria-level="1">Accessibilité</h1>
+      <h2 role="heading" aria-level="2">Accessibilité dans la
+        Conception web</h2>
+      <figure class="article-img">
+        <img src="img/Accessibilite.svg" alt="Représentation pour l'accessibilité web" width="550" height="600">
+        <figcaption class="hidden">Une représentation vectorielle d'une personne en fauteuil roulant tenant une tablette à la main, avec en arrière-plan un ordinateur de bureau avec une page web ouverte. Trois icônes représentant les sens de l'ouïe, de la vue et de la parole.</figcaption>
+      </figure>
+      <figure class="article-logo">
+        <img src="img/AccessibilityLogo.svg" alt="Icône accessibilité Web" width="145" height="145">
+        <figcaption class="hidden">Une icône vectorielle qui montre l'accessibilité dans le web</figcaption>
+      </figure>
+      <p>Pour moi, l’accessibilité pour tous les utilisateurs est primordiale.</p>
+      <a class="more" href="https://www.w3schools.com/accessibility/" title="Savoir plus sur l'accessibilité Wbe">Savoir plus</a>
+    </article>
+
+    <article id="responsive">
+      <h1 class="hidden" role="heading" aria-level="1">Responsive Webdesign</h1>
+      <h2 role="heading" aria-level="2">Responsive Webdesign</h2>
+      <figure class="article-img">
+        <img src="img/Responsive.svg" alt="Représentation Responsive Webdesign" width="550" height="600">
+        <figcaption class="hidden">Une représentation vectorielle de différentes tailles d'écrans montrant une page web adaptée. Une personne assise devant son ordinateur portable.</figcaption>
+      </figure>
+      <figure class="article-logo">
+        <img src="img/ResponsiveLogo.svg" alt="Icône Responsive Webdesign" width="145" height="145">
+        <figcaption class="hidden">Une icône vectorielle qui montre le design web responsive</figcaption>
+      </figure>
+      <p>Je maitrise le design adaptable pour différentes tailles d’écran.</p>
+      <a  class="more" href="https://www.w3schools.com/css/css_rwd_intro.asp" title="Savoir plus sur le Responsive Webdesign">Savoir plus</a>
+    </article>
   </section>
-  <section>
-    <h1 class="hidden">Citation</h1>
-    <h2>Citation</h2>
-    <figure>
-      <img src="" alt="" width="550" height="600">
-      <figcaption class="hidden"></figcaption>
-    </figure>
-    <figure>
-      <img src="img/LOGO.svg" alt="Mon logo personnel" width="145" height=145">
-      <figcaption class="hidden">Mon logo personnel</figcaption>
-    </figure>
-    <p>Ich schaffte es auf den … Platz!</p>
-    <a href="">Savoir plus</a>
-  </section>
-  <section>
-    <h1 class="hidden">Mes compétences</h1>
-    <h2>Mes compétences</h2>
-    <a href="index.html">Voir tout</a>
-    <div>
+
+
+
+  <section id="skills">
+    <h1 class="hidden" role="heading" aria-level="1">Mes compétences</h1>
+    <h2 role="heading" aria-level="2">Mes compétences</h2>
+    <a  class="more" href="#skills" title="Voir tout mes compétences">Voir tout</a>
+    <div class="skills-block">
       <figure>
         <img src="img/HTML.svg" alt="Logo HTML" width="345" height="320">
         <figcaption class="hidden"></figcaption>
       </figure>
-      <a></a>
+      <a class="skills_more" href="#skills" title="Lire plus"></a>
       <p>Créer et concevoir des pages web en définissant la …</p>
     </div>
-    <div>
+    <div class="skills_block">
       <figure>
         <img src="img/CSS.svg" alt="Logo CSS" width="345" height="320">
         <figcaption class="hidden"></figcaption>
       </figure>
-      <a></a>
+      <a class="skills_more" href="#skills" title="Lire plus"></a>
       <p>Embellir et styliser les pages web en contrôlant la …</p>
     </div>
-    <div>
+    <div class="skills_block">
       <figure>
-        <img src="img/JAVASCRIPT.svg" alt="Logo JavaScript" width="345" height="320">
+        <img src="img/JavaScript.svg" alt="Logo JavaScript" width="345" height="320">
         <figcaption class="hidden"></figcaption>
       </figure>
-      <a></a>
+      <a class="skills_more" href="#skills" title="Lire plus"></a>
       <p>Rendre mes pages web interactives en ajoutant des …</p>
     </div>
   </section>
-  <section>
-    <h1 class="hidden">Contact</h1>
-    <h2>Contact</h2>
+  <section id="contact">
+    <h1 class="hidden" role="heading" aria-level="1">Contact</h1>
+    <h2 role="heading" aria-level="2">Contact</h2>
     <figure>
-      <img src="img/Map.png" alt="Carte pour trouver mon adress" width="430" height="430">
+      <img src="img/Map.svg" alt="Carte pour trouver mon adress" width="430" height="430">
       <figcaption class="hidden"></figcaption>
     </figure>
     <figure>
-      <img src="img/LOGO.svg" alt="Mon logo personnel" width="140" height="140">
+      <img src="img/LogoPersonnel.svg" alt="Mon logo personnel" width="140" height="140">
       <figcaption class="hidden"></figcaption>
     </figure>
     <ul>
       <li>
-        <h3>Par téléphone</h3>
+        <h3 role="heading" aria-level="3">Par téléphone</h3>
         <p>Vous pouvez m’appeler au</p>
         <address>0475 642 367</address>
       </li>
       <li>
-        <h3>Par mail</h3>
+        <h3 role="heading" aria-level="3">Par mail</h3>
         <p>Vous pouvez m’écrire sur</p>
         <address>ameliesiquet@gmail.com</address>
       </li>
     </ul>
-    <a href="index.html" title="Contactez-moi!">Contact</a>
+    <a href="" title="Contactez-moi!">Contact</a>
   </section>
 </main>
-<footer>
+
+
+
+<footer id="footer">
   <figure>
-    <img src="img/LOGO.svg" alt="Mon logo personnel" width="285" height=285"">
+    <img src="img/LogoPersonnel.svg" alt="Mon logo personnel" width="285" height="285">
     <figcaption class="hidden"></figcaption>
   </figure>
-  <a href="index.html" title="Savoir plus sur moi">Sur moi</a>
-  <a href="index.html" title="">Events</a>
-  <a href="index.html" title="Aller vers mes compétences">Compétences</a>
-  <a href="index.html" title="Aller vers mes projets">Projets</a>
-  <a href="https://github.com/ameliesiquet">Github</a>
-  <a href="index.html">Facebook</a>
-  <a href="https://www.instagram.com/amelie_siquet/">Instagram</a>
-
-
+  <ul class="nav-list">
+    <li><a href="#hero" title="Savoir plus sur moi">Sur moi</a></li>
+    <li><a href="#about" title="Savoir plus sur mes centres d'intérêts">À propos</a></li>
+    <li><a href="#skills" title="Aller vers mes compétences">Compétences</a></li>
+  </ul>
+  <ul class="social-media">
+    <li>
+      <a href="https://github.com/ameliesiquet">Github</a>
+    </li>
+    <li>
+      <a href="https://www.facebook.com/amelie.siquet/">Facebook</a>
+    </li>
+    <li>
+      <a href="https://www.instagram.com/amelie_siquet/">Instagram</a>
+    </li>
+  </ul>
 </footer>
 </body>
 </html>
