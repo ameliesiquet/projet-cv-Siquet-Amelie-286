@@ -7,31 +7,131 @@
     src: url("../font/RockoFLF.ttf");
 }
 
-.hidden {
-    clip-path: inset(50%);
-    height: 1px;
-    overflow: hidden;
-    position: absolute;
-    white-space: nowrap;
-    width: 1px;
+/* GENERAL */
+html{
+    font-family: RockoFLF, serif;
+    width: 100%;
 }
 
-*{
-    font-family: RockoFLF;
+body{
+    margin: 16px 20px;
 }
 
-h1, h2{
-    text-transform: uppercase;
-}
 a{
     text-decoration: none;
 }
-#title{
-    font-family: RockoUltraFLF;
-    font-size: 45px;
-    color: #FF6E0C;
-    line-height: 90px;
+img{
+    width: 100px;
+    height: auto;
 }
+
+/* h1, h2, h3 alle font family RockoUltra
+ h1, h2, h3:not(#about__accessibility > h3, #about__responsive>h3) {
+    font-family: RockoUltraFLF, serif;
+    text-transform: uppercase;
+}*/
+
+
+
+/* HEADER */
+#header{
+
+}
+
+
+h1{
+    font-family: RockoUltraFLF, serif;
+    font-size: 35px;
+    text-transform: uppercase;
+    color: #FF6E0C;
+    text-align: center;
+}
+
+.navigation__list, .language-dropdown, #contact-button{
+    display: none;
+}
+
+/* MAIN*/
+    /*HERO*/
+        /*HER0-me*/
+.hero__me{
+    min-width: 333px;
+    background-color: #DDBD8E;
+    text-align: center;
+    border-radius: 20px;
+    position: relative;
+}
+.hero__me h3{
+    font-family: RockoUltraFLF, serif;
+    text-transform: uppercase;
+    font-size: 50px;
+    color: white;
+    position: absolute;
+    top:20px;
+}
+.hero__me img{
+    display: inline-block;
+    width: 100%;
+    vertical-align: bottom;
+    margin-top: 50px;
+}
+        /*HER0-projects*/
+.hero__projects{
+    min-width: 333px;
+    background-color: #F20C90;
+    text-align: center;
+    border-radius: 20px;
+}
+.hero__projects h3{
+    font-family: RockoUltraFLF, serif;
+    text-transform: uppercase;
+    font-size: 42px;
+    color: white;
+}
+.hero__projects p{
+    color: white;
+    font-size: 12px;
+}
+.hero__projects a{
+    font-family: RockoUltraFLF, serif;
+    font-size: 13px;
+    text-transform: uppercase;
+    display: inline-block;
+    background-color: #F950AD;
+    color: white;
+    padding: 15px 21px;
+    border-radius: 10px;
+}
+        /*HER0-junior*/
+.hero__junior{
+    min-width: 333px;
+    background-color: #99D6EA;
+    text-align: center;
+    border-radius: 20px;
+    position: relative;
+
+}
+.hero__junior h3{
+    font-family: RockoUltraFLF, serif;
+    text-transform: uppercase;
+    font-size: 42px;
+    color: white;
+    position: absolute;
+    top: 20px;
+}
+.hero__junior img{
+    width: 100%;
+    vertical-align: bottom;
+}
+
+
+
+
+
+
+
+/*
+
 
 #header{
     display: flex;
@@ -68,110 +168,13 @@ a{
     border-radius: 30px;
 }
 
-/*Dropdown-Menü */
-/* ändern von margin padding gucken wie anders machen */
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: white;
-    width: 50px;
-    min-width: 160px;
-    box-shadow: 0 3px 11px -1px rgba(64,73,255,.11);
-    border-radius: 10px;
-    padding: 17px;
-}
-.dropdown-content a{
-    padding: 5px;
-    margin: 5px;
-}
-.dropdown-content a:hover{
-    background-color: #f0f0f0;
-    border-radius: .75em;
-    padding-left: 1em;
-}
 
-
-/* Stil für die sichtbare Schaltfläche */
-.clickable-dropdown:hover .dropdown-content {
-    display: block;
-}
-
-
-
-
-.language_dropdown{
+.language-dropdown{
+    margin: 0 25px 0 150px;
+    padding: 12px 17px;
     background-color: #F0F0F0;
     border-radius: 20px;
-    width: 54px;
-}
-.language_dropdown a{
-    padding: 12px 17px;
 }
 
-#hero{
-    display: grid;
-    width: 80%;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 2fr;
-    gap: 25px;
-    margin: auto;
-}
-
-.hero-me{
-    background-color: #DDBD8E;
-    width: 775px;
-    border-radius: 25px;
-    grid-column: 1 / span 1; grid-row: 1 / span 2;
-}
-.hero-me h2{
-    font-family: RockoUltraFLF;
-    font-size: 95px;
-    color: white;
-    max-width: 380px;
-}
-
-.hero-projects{
-    background-color: #F20C90;
-    text-align: center;
-    width: 478px; /* 550-36-36 */
-    padding: 23px 36px;
-    border-radius: 25px;
-    grid-column: 2 / span 1; grid-row: 1 / span 1;
-}
-.hero-projects h2{
-    font-family: RockoUltraFLF;
-    font-size: 75px;
-    color: white;
-}
-.hero-projects p{
-    font-family: RockoFLF;
-    font-size: 17px;
-    color: white;
-}
-.hero-projects a{
-    font-family: RockoUltraFLF;
-    font-size: 17px;
-    text-transform: uppercase;
-    width: 230px;
-    color: white;
-    background-color: #F950AD;
-    padding: 24px 0;
-    border-radius: 15px;
-    display: inline-block;
-}
-
-
-.hero-junior{
-    background-color: #99D6EA;
-    width: 490px; /* 550-30-30 */
-    text-align: center;
-    padding: 23px 30px;
-    border-radius: 25px;
-    grid-column: 2 / span 1; grid-row: 2 / span 1;
-}
-.hero-junior h2{
-    font-family: RockoUltraFLF;
-    font-size: 75px;
-    color: white;
-}
+ */
 
