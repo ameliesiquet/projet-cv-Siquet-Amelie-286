@@ -21,8 +21,20 @@ a{
     text-decoration: none;
 }
 img{
-    width: 100px;
     height: auto;
+}
+
+.more{
+    font-family: RockoUltraFLF, serif;
+    font-size: 13px;
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+    background-color: #FF6E0C;
+    display: inline-block;
+    padding: 20px 0;
+    width: 100%;
+    border-radius: 70px;
 }
 
 /* h1, h2, h3 alle font family RockoUltra
@@ -80,7 +92,7 @@ h1{
     min-width: 333px;
     background-color: #F20C90;
     text-align: center;
-    border-radius: 20px;
+    border-radius: 25px;
 }
 .hero__projects h3{
     font-family: RockoUltraFLF, serif;
@@ -107,7 +119,7 @@ h1{
     min-width: 333px;
     background-color: #99D6EA;
     text-align: center;
-    border-radius: 20px;
+    border-radius: 25px;
     position: relative;
 
 }
@@ -125,14 +137,177 @@ h1{
 }
 
 
+/*FORMATION*/
+.formation__list {
+    /*display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 15px;
+
+     */
+}
+.formation__list__item{
+    padding: 22px;
+}
+#formation h2 {
+    font-family: RockoUltraFLF, serif;
+    font-size: 60px;
+    text-transform: uppercase;
+    color: #F20C90;
+}
+
+#formation h2 span {
+    display: block;
+    color: #FF6E0C;
+}
+
+.formation__list__item{
+    background-color: lightgrey;
+    border-color: #AAAAAA;
+    border-radius: 20px;
+}
+
+.formation__list__item dt{
+    font-family: RockoUltraFLF, serif;
+    font-size: 21px;
+    color: #F20C90;
+}
+
+.formation__list__item dd{
+    font-size: 12px;
+    color: #AAAAAA;
+    padding: 15px 0 21px;
+
+}
+.formation__list__item p{
+    padding-bottom: 3px;
+}
+
+.year-circle{
+    font-family: RockoUltraFLF,serif;
+    font-size: 12px;
+    color: white;
+    display: inline-block;
+    padding: 21px 11px;
+    background-color: #F20C90;
+    border-radius: 50%;
+}
+
+
+
+    /* APPLICATION*/
+#application{
+    background-color: #71C5E8;
+    text-align: center;
+    border-radius: 25px;
+}
+#application h2{
+    font-family: RockoUltraFLF,serif;
+    font-size: 45px;
+    text-transform: uppercase;
+    color: white;
+}
+#application h3{
+    font-family: RockoUltraFLF,serif;
+    font-size: 18px;
+    text-transform:uppercase;
+    color: white;
+}
+.application__content p{
+     font-size: 12px;
+     color: white;
+}
+
+    /*ABOUT*/
+#about__accessibility h3{
+    font-family: RockoUltraFLF,serif;
+    font-size: 34px;
+    color: #F20C90;
+}
+#about__responsive h3{
+    font-family: RockoUltraFLF,serif;
+    font-size: 34px;
+    color: #FF6E0C;
+}
+#about p {
+    font-size: 17px;
+    color: #AAAAAA;
+}
+.about__accessibility__img, .about__responsive__img{
+    width: 100%;
+}
+.about__accessibility__logo{
+    background-color: #FF6E0C;
+    border-radius: 50%;
+}
+.about__responsive__logo{
+    background-color: #F20C90;
+    border-radius: 50%;
+}
+
+#about a{
+    font-family: RockoUltraFLF, serif;
+    font-size: 13px;
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+    background-color: #FF6E0C;
+    display: inline-block;
+    padding: 20px 0;
+    width: 100%;
+    border-radius: 70px;
+}
+
+/* SKILLS*/
+#skills{
+    background-color: #F5F5F5;
+    padding: 52px 0 100px;
+}
+#skills h2 {
+    font-family: RockoUltraFLF, serif;
+    font-size: 43px;
+    text-transform: uppercase;
+    color: #FF6E0C;
+
+}
+#skills h2 span{
+    color: #F20C90;
+    display: block;
+}
+
+#skills div{
+    border-radius: 25px;
+    border: 4px solid #F0F0F0;
+
+}
+#skills img{
+    background-color: white;
+    max-width: 290px;
+    max-height: 183px;
+
+}
+.skills_more{
+    font-family: RockoUltraFLF, serif;
+    font-size: 12px;
+    background-color: #F20C90;
+    color: white;
+    padding: 8px 22px;
+    border-radius: 35px;
+    display: inline-block;
+}
+#skills p{
+    font-family: RockoUltraFLF, serif;
+    font-size: 20px;
+    color: #512D00;
+}
 
 
 
 
 
-/*
 
 
+
+/* DESKTOP
 #header{
     display: flex;
 }
@@ -177,4 +352,3 @@ h1{
 }
 
  */
-
