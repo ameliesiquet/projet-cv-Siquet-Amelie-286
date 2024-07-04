@@ -5,19 +5,19 @@ https://www.dunkin.be
 
 Copies d'écran du site:
 
-![](img/Screenshot.png)
+![](screens/screenshot/ScreenshotDesktop.png)
 
 
 
 Screencasts des animations du site: 
 
-![](screencast/1.mov)
-![](screencast/2.mov)
-![](screencast/3.mov)
-![](screencast/4.mov)
-![](screencast/5.mov)
-![](screencast/6.mov)
-![](screencast/7.mov)
+![](screens/screencast/1.mov)
+![](screens/screencast/2.mov)
+![](screens/screencast/3.mov)
+![](screens/screencast/4.mov)
+![](screens/screencast/5.mov)
+![](screens/screencast/6.mov)
+![](screens/screencast/7.mov)
 
 
 

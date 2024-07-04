@@ -1,0 +1,356 @@
+@import "reset.css";
+@import "section/hero.css";
+@import "section/formation.css";
+@import "section/application.css";
+@import "section/about.css";
+@import "section/skills.css";
+@import "section/contact.css";
+@import "section/contact-form.css";
+@import "section/footer.css";
+
+
+@font-face {
+    font-family: "RockoUltraFLF";
+    src: url("../../font/RockoUltraFLF-Bold.ttf");
+}
+@font-face {
+    font-family: "RockoFLF";
+    src: url("../../font/RockoFLF.ttf");
+}
+
+
+
+/* GENERAL */
+html{
+    font-family: RockoFLF, serif;
+    width: 100%;
+}
+
+
+.section {
+    margin: 0 20px;
+}
+
+a{
+    text-decoration: none;
+}
+img{
+    height: auto;
+}
+
+.more{
+    font-family: RockoUltraFLF, serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+    background-color: #FF6E0C;
+    display: inline-block;
+    padding: 20px 0;
+    width: 100%;
+    border-radius: 70px;
+}
+
+
+/* h1, h2, h3 alle font family RockoUltra
+ h1, h2, h3:not(#about__accessibility > h3, #about__responsive>h3) {
+    font-family: RockoUltraFLF, serif;
+    text-transform: uppercase;
+}*/
+
+
+
+/* HEADER */
+#header{
+    padding: 13px 20px;
+    background-color: white;
+    border-bottom: #F0F0F0 1px solid;
+    position: sticky;
+    min-width: 335px;
+    min-height: 45px;
+    top: 0;
+    z-index: 2;
+    display: inline-flex;
+    justify-content:flex-start;
+
+
+}
+
+nav{
+    display: flex;
+    min-width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    margin: auto;
+}
+h1{
+    position: absolute;
+    display: block;
+    font-family: RockoUltraFLF, serif;
+    font-size: 34px;
+    min-width: 176px;
+    text-transform: uppercase;
+    color: #FF6E0C;
+    text-align: center;
+    margin: 0 80px;
+}
+
+
+
+/* BURGER MENU*/
+.burger-menu {
+    align-items: flex-end;
+    position: absolute;
+    right: 0;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.burger-menu input {
+    display: block;
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    cursor: pointer;
+    opacity: 0;
+    z-index: 2;
+    -webkit-touch-callout: none;
+}
+.burger-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 2px;
+    background-color: #F0F0F0;
+    padding: 14px 22px;
+    border-radius: 50px;
+    z-index: 9999999999;
+}
+
+.burger-wrapper span {
+    display: block;
+    width: 13px; /* Set the width to 13px */
+    height: 2px;
+    background-color: black;
+    border-radius: 3px;
+    z-index: 1;
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0), background 0.5s cubic-bezier(0.77,0.2,0.05,1.0), opacity 0.55s ease;
+}
+.burger-menu span:first-child {
+    transform-origin: 0% 0%;
+}
+
+.burger-menu input:checked ~ .burger-wrapper span:first-child {
+    transform: rotate(45deg) translate(2px, -1px) ;
+}
+
+.burger-menu input:checked ~ .burger-wrapper span:nth-child(2) {
+    opacity: 0;
+}
+
+.burger-menu input:checked ~ .burger-wrapper span:last-child {
+    transform: rotate(-45deg) translate(2px, -2px);
+}
+
+.burger-menu__list {
+    display: none;
+    position: fixed;
+    top: 65px;
+    left: 0;
+    width: 100%;
+    min-height: 600px;
+    background: white;
+}
+
+.burger-menu input:checked ~ .burger-menu{
+    display: block;
+}
+.burger-menu input:checked ~ #navigation{
+    background-color: black;
+}
+
+.burger-menu input:checked ~ .burger-menu__list {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    text-align: center;
+    padding: 150px 0;
+
+}
+
+.burger-menu input:checked ~ .burger-menu__list a{
+    font-family: RockoUltraFLF, serif;
+    font-size: 35px;
+    text-transform: uppercase;
+    color: #4C2F0B;
+}
+
+.burger-menu input:checked~nav{
+    background-color: #AAAAAA;
+}
+
+        /* clickable dropdown projets */
+
+
+.clickable-dropdown .dropdown-content {
+    display: none;
+}
+.clickable-dropdown input{
+    display: inline-block;
+    opacity: 0;
+    z-index: 2;
+    width: 180px;
+    cursor: pointer;
+    -webkit-touch-callout: none;
+}
+
+.clickable-dropdown-button::after{
+    content: ">";
+    margin-left: 5px;
+    max-width: 12px;
+    max-height: 19px;
+}
+
+.clickable-dropdown input:checked ~ .clickable-dropdown{
+    color: #F20C90;
+    display: block;
+}
+
+.burger-menu input:checked ~ .clickable-dropdown input:checked ~{
+    .clickable-dropdown {
+        color: #F20C90;
+        display: block;
+    }
+}
+
+/* LANGUAGE DROPDOWN*/
+
+/* wenn ich auf die flagge klicke lädt die seite sich neu ?*/
+.language-dropdown{
+    background-color: #F0F0F0;
+    border-radius:12px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    top: -15px;
+    min-width: 40px;
+    text-align: center;
+    z-index: 1;
+
+
+}
+.language-dropdown input{
+    display: block;
+    width: 40px;
+    height: 28px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    opacity: 0;
+    -webkit-touch-callout: none;
+}
+.language-dropdown img{
+    max-height: 10px;
+    min-width: 14px;
+    padding: 8px 4px;
+
+}
+.language-dropdown-button{
+}
+.language-dropdown-content{
+    display: none;
+}
+.language-dropdown input:checked ~ .language-dropdown-content{
+    display: block;
+
+}
+
+#contact-button{
+    background-color: #F5F5F5;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+}
+.contact-button{
+    font-family: RockoUltraFLF, serif;
+    font-size: 13px;
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+    background-color: #FF6E0C;
+    display: inline-block;
+    padding: 20px 0;
+    width: 90%;
+    border-radius: 70px;
+    margin: 20px;
+}
+/* MAIN*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 481px){
+    #header{
+        display: flex;
+    }
+
+    #navigation{
+        display: flex;
+        align-items: center;
+        margin: 0 128px;
+    }
+    .navigation_list{
+        display: flex;
+        gap: 30px;
+        align-items: center;
+    }
+
+    #navigation a{
+        font-family: RockoUltraFLF;
+        font-size: 14px;
+        color: #512D00;
+        text-transform: uppercase;
+    }
+    .language_dropdown{
+        margin: 0 25px 0 150px;
+    }
+    #contact-button .contact-button{
+        font-size: 17px;
+        background-color: #FF6E0C;
+        color: white;
+        padding: 16px 40px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        border-radius: 30px;
+    }
+
+
+    .language-dropdown{
+        margin: 0 25px 0 150px;
+        padding: 12px 17px;
+        background-color: #F0F0F0;
+        border-radius: 20px;
+    }
+
+}
+
+
+
+
+/* DESKTOP

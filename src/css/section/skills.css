@@ -1,0 +1,112 @@
+#skills {
+    background-color: #F5F5F5;
+    padding: 52px 12px 32px;
+    margin-top: 60px;
+}
+#skills h2 {
+    font-family: RockoUltraFLF, serif;
+    font-size: 43px;
+    text-transform: uppercase;
+    color: #FF6E0C;
+}
+#skills h2 span {
+    color: #F20C90;
+    display: block;
+}
+#skills a.more {
+    margin: 20px 0 60px;
+}
+#skills img {
+    background-color: white;
+    max-width: 290px;
+    max-height: 183px;
+    display: block;
+    margin: auto;
+    border-radius: 15px;
+}
+.skills__block__more {
+    font-family: RockoUltraFLF, serif;
+    font-size: 12px;
+    background-color: #F20C90;
+    color: white;
+    padding: 8px 22px;
+    margin: 17px 0;
+    border-radius: 35px;
+    display: inline-block;
+}
+#skills p {
+    font-family: RockoUltraFLF, serif;
+    font-size: 20px;
+    color: #512D00;
+    max-width: 236px;
+    text-align: left;
+}
+.slider-button span {
+    background-color: #E3E3E3;
+    padding: 18px 22px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.slider-container {
+    position: relative;
+    min-height: 364px;
+    width: 336px;
+    margin: 0 auto;
+    left: 0;
+    overflow: hidden;
+}
+.skills__block {
+    border-radius: 25px;
+    border: 4px solid #F0F0F0;
+    padding: 20px 14px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    transform: translateX(100%);
+    opacity: 0;
+}
+.skills__block.active {
+    opacity: 1;
+    transform: translateX(0);
+    z-index: 1;
+}
+
+
+.skills__block.exitingLeft {
+    transform: translateX(-100%);
+}
+
+.skills__block.exitingRight {
+    transform: translateX(100%);
+}
+
+.skills__block.enteringRight {
+    transform: translateX(100%);
+    opacity: 1;
+    z-index: 1;
+}
+
+.skills__block.enteringLeft {
+    transform: translateX(-100%);
+    opacity: 1;
+    z-index: 1;
+}
+.slider-button {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+    position: relative;
+    margin-top: 25px;
+}
+.dot {
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+    padding: 5px;
+    margin: 0 5px;
+}

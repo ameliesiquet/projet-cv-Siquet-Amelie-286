@@ -1,0 +1,45 @@
+/* APPLICATION*/
+#application{
+    background-color: #71C5E8;
+    border-radius: 25px;
+    margin-top: 70px;
+    padding: 35px 0 210px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+
+}
+#application h2{
+    font-family: RockoUltraFLF,serif;
+    font-size: 45px;
+    text-transform: uppercase;
+    color: white;
+    margin-bottom: 37px;
+
+}
+#application h3{
+    font-family: RockoUltraFLF,serif;
+    font-size: 18px;
+    text-transform:uppercase;
+    color: white;
+}
+#application p{
+    font-size: 12px;
+    line-height: 20px;
+    color: white;
+    display: inline-block;
+    margin:26px 0 34px ;
+    max-width: 187px;
+}
+
+.application__img{
+    max-width: 182px;
+    position: absolute;
+    bottom: -30%;
+    left: 25%;
+}
+.application__logos{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}

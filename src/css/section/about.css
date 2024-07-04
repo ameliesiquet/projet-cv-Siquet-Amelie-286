@@ -1,0 +1,59 @@
+/*ABOUT*/
+#about{
+    margin-top: 60px;
+}
+#about__accessibility h3{
+    font-family: RockoUltraFLF,serif;
+    font-size: 34px;
+    color: #F20C90;
+}
+#about__responsive h3{
+    font-family: RockoUltraFLF,serif;
+    font-size: 34px;
+    color: #FF6E0C;
+}
+#about p {
+    font-size: 17px;
+    color: #AAAAAA;
+    margin: 30px 0;
+}
+.about__accessibility__img, .about__responsive__img{
+    width: 100%;
+
+}
+/*.about__accessibility__img{
+    position: relative;
+    bottom: 0;
+    right: 0;
+}
+
+ */
+.about__accessibility__logo{
+    background-color: #FF6E0C;
+    border-radius: 50%;
+    max-width: 105px;
+    position: relative;
+    left: 230px;
+    bottom: 50px;
+}
+.about__responsive__logo{
+    background-color: #F20C90;
+    border-radius: 50%;
+    max-width: 105px;
+    position: relative;
+    left: 230px;
+    bottom: 50px;
+}
+
+#about a{
+    font-family: RockoUltraFLF, serif;
+    font-size: 13px;
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+    background-color: #FF6E0C;
+    display: inline-block;
+    padding: 20px 0;
+    width: 100%;
+    border-radius: 70px;
+}

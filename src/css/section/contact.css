@@ -1,0 +1,52 @@
+
+/* CONTACT */
+#contact{
+    background-color: #F20C90;
+    border-radius: 25px;
+    padding: 38px 36px 58px;
+    text-align: center;
+    margin-top: 80px;
+}
+#contact img{
+    max-width: 260px;
+    max-height: 260px;
+    background-color: white;
+    border-radius: 50%;
+    position: relative;
+    margin: 43px 0 28px;
+}
+#contact .contact__logo{
+    max-width: 77px;
+    max-height: 77px;
+    position: absolute;
+    right: 50px;
+}
+#contact h2{
+    font-family: RockoUltraFLF, serif;
+    font-size: 42px;
+    text-transform: uppercase;
+    color: white;
+}
+
+
+.contact__contact-button{
+    font-family: RockoUltraFLF, serif;
+    font-size: 13px;
+    text-transform: uppercase;
+    color: #F20C90;
+    background-color: white;
+    padding: 17px 62px;
+    border-radius: 65px;
+    display: inline-block;
+    margin-top: 37px;
+}
+
+#contact .contact__type{
+    font-family: RockoUltraFLF, serif;
+    font-size: 19px;
+    text-transform: uppercase;
+    color: white;
+}
+#contact .contact__info{
+    display: none;
+}

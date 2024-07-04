@@ -1,0 +1,76 @@
+/* FOOTER*/
+
+.footer__container{
+    background-color: #FF6E0C;
+    padding: 154px 20px 38px;
+    margin-top: 100px;
+    margin-bottom: 150px;
+    position: relative;
+}
+.footer__container__personal-logo{
+    position: absolute;
+    min-width: 172px;
+    top:-50px;
+    margin: 0 82px;
+}
+
+
+.footer__container__navigation{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.footer__container__navigation__item{
+    background-color: #EE4C25;
+    border-radius: 80px;
+    text-align: center;
+}
+.footer__container__navigation__item a{
+    font-family: RockoUltraFLF, serif;
+    font-size: 13px;
+    text-transform: uppercase;
+    color: white;
+    display: inline-block;
+    width: 100%;
+    margin: 0 auto;
+    padding: 24px 0;
+}
+
+.footer__container__social{
+    display: flex;
+    gap: 17px;
+    justify-content: center;
+    margin-top: 36px;
+}
+.footer__container__social__item a {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+    text-indent: -9999px;
+}
+
+.footer__container__social__item a.github {
+    background-image: url("/img/GithubLogo.svg");
+}
+
+.footer__container__social__item a.facebook {
+    background-image: url("/img/FacebookLogo.svg");
+}
+
+.footer__container__social__item a.instagram {
+    background-image: url("/img/InstaramLogo.svg");
+}
+
+.footer__legal{
+    font-size: 10px;
+    color: #AAAAAA;
+    text-align: center;
+    background-color: white;
+    width: 100%;
+    position: relative;
+    top: -130px;
+}
