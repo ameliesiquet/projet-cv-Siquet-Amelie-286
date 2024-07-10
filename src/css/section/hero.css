@@ -1,50 +1,63 @@
 /*HERO*/
 /*HER0-me*/
-#hero{
+#hero {
     margin-top: 40px;
 }
-.hero__me{
+
+.hero__me {
     min-width: 333px;
     background-color: #DDBD8E;
     text-align: center;
     border-radius: 20px;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Ändere von flex-end zu center */
+    align-items: center;
 }
-.hero__me h3{
+
+.hero__me h3 {
     font-family: RockoUltraFLF, serif;
     text-transform: uppercase;
     font-size: 50px;
     color: white;
     position: absolute;
-    top:20px;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 100%
 }
-.hero__me img{
-    display: inline-block;
+
+.hero__me img {
     width: 100%;
     vertical-align: bottom;
     margin-top: 50px;
 }
+
 /*HER0-projects*/
-.hero__projects{
+.hero__projects {
     background-color: #F20C90;
     border-radius: 25px;
-    margin: 20px 0;
+    margin:20px 0;
     padding: 15px 17px 25px;
 }
-.hero__projects h3{
+
+.hero__projects h3 {
     font-family: RockoUltraFLF, serif;
     text-transform: uppercase;
     font-size: 42px;
     color: white;
     text-align: center;
 }
-.hero__projects p{
+
+.hero__projects p {
     color: white;
     font-size: 12px;
     margin-top: 20px;
     margin-bottom: 13px;
 }
-.hero__projects__link a{
+
+.hero__projects__link a {
     font-family: RockoUltraFLF, serif;
     font-size: 13px;
     text-transform: uppercase;
@@ -56,26 +69,32 @@
     text-align: center;
     min-width: 145px;
 }
-.hero__projects__link .portfolio{
+
+.hero__projects__link .portfolio {
     background-color: white;
     color: #F20C90;
 }
-.hero__projects__link{
+
+.hero__projects__link {
     display: flex;
     gap: 9px;
     justify-content: center;
     align-items: center;
 }
+
 /*HER0-junior*/
-.hero__junior{
+.hero__junior {
     min-width: 333px;
     background-color: #99D6EA;
     text-align: center;
     border-radius: 25px;
     position: relative;
-
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
 }
-.hero__junior h3{
+
+.hero__junior h3 {
     font-family: RockoUltraFLF, serif;
     text-transform: uppercase;
     font-size: 42px;
@@ -83,7 +102,66 @@
     position: absolute;
     top: 20px;
 }
-.hero__junior img{
+
+.hero__junior img {
     width: 100%;
     vertical-align: bottom;
+}
+
+/* DESKTOP */
+@media (min-width: 481px) {
+    #hero {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+
+    .hero__me {
+        grid-area: 1 / 1 / 3 / 2;
+        min-width: 230px;
+        min-height: 270px;
+    }
+    .hero__me h3{
+        font-size: 40px;
+    }
+
+    .hero__projects {
+        grid-area: 1 / 2 / 2 / 3;
+        margin: 0;
+        min-width: 160px;
+        padding: 10px;
+
+    }
+    .hero__projects__link a {
+        font-size: 7px;
+        padding: 7px 0;
+        border-radius: 7px;
+        text-align: center;
+        min-width: 75px;
+    }
+    .hero__projects p{
+        font-size: 8px;
+    }
+    .hero__projects__link .portfolio {
+        background-color: #F950AD;
+        color: white;
+    }
+
+    .hero__junior {
+        grid-area: 2 / 2 / 3 / 3;
+        min-width: 160px;
+
+    }
+    .hero__me, .hero__projects, .hero__junior{
+        border-radius: 10px;
+    }
+    .hero__projects h3, .hero__junior h3{
+        font-size: 20px;
+
+    }
+    #hero img {
+        max-width: 100%;
+        vertical-align: bottom;
+    }
+
 }
