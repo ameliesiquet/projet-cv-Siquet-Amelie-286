@@ -1,4 +1,3 @@
-
 /* BURGER MENU*/
 .burger-menu {
     align-items: flex-end;
@@ -10,8 +9,8 @@
 
 .burger-menu input {
     display: block;
-    width: 40px;
-    height: 32px;
+    min-width: 2.5rem;
+    min-height: 2rem;
     position: absolute;
     cursor: pointer;
     opacity: 0;
@@ -22,19 +21,19 @@
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    gap: 2px;
+    gap: 0.125rem;
     background-color: #F0F0F0;
-    padding: 14px 22px;
-    border-radius: 50px;
+    padding: 0.875rem 1.375rem;
+    border-radius: 3.125rem;
     z-index: 9999999999;
 }
 
 .burger-wrapper span {
     display: block;
-    width: 13px;
-    height: 2px;
+    width: 0.8125rem;
+    height: 0.125rem;
     background-color: black;
-    border-radius: 3px;
+    border-radius: 0.1875rem;
     z-index: 1;
     transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0), background 0.5s cubic-bezier(0.77,0.2,0.05,1.0), opacity 0.55s ease;
 }
@@ -43,7 +42,7 @@
 }
 
 .burger-menu input:checked ~ .burger-wrapper span:first-child {
-    transform: rotate(45deg) translate(2px, -1px) ;
+    transform: rotate(45deg) translate(0.125rem, -0.0625rem) ;
 }
 
 .burger-menu input:checked ~ .burger-wrapper span:nth-child(2) {
@@ -51,16 +50,16 @@
 }
 
 .burger-menu input:checked ~ .burger-wrapper span:last-child {
-    transform: rotate(-45deg) translate(2px, -2px);
+    transform: rotate(-45deg) translate(0.125rem, -0.125rem);
 }
 
 .burger-menu__list {
     display: none;
     position: fixed;
-    top: 65px;
+    top: 4.0625rem;
     left: 0;
     width: 100%;
-    min-height: 600px;
+    min-height: 37.5rem;
     background: white;
     transition: transform 0.5s ease, opacity 0.5s ease;
 }
@@ -69,9 +68,9 @@
 .burger-menu input:checked ~ .burger-menu__list {
     display: flex;
     flex-direction: column;
-    gap: 24px;
+    gap: 1.5rem;
     text-align: center;
-    padding: 150px 0;
+    padding: 9.375rem 0;
     transition: transform 1s ease-out, opacity 0.5s ease;
 
 
@@ -79,7 +78,7 @@
 
 .burger-menu input:checked ~ .burger-menu__list a{
     font-family: RockoUltraFLF, serif;
-    font-size: 35px;
+    font-size: 2.1875rem;
     text-transform: uppercase;
     color: #4C2F0B;
 }
@@ -88,9 +87,6 @@
     background-color: #AAAAAA;
 }
 
-/* clickable dropdown projets */
-
-
 .clickable-dropdown .dropdown-content {
     display: none;
 }
@@ -98,16 +94,16 @@
     display: inline-block;
     opacity: 0;
     z-index: 2;
-    width: 180px;
+    width: 11.25rem;
     cursor: pointer;
     -webkit-touch-callout: none;
 }
 
 .clickable-dropdown-button::after{
     content: ">";
-    margin-left: 5px;
-    max-width: 12px;
-    max-height: 19px;
+    margin-left: 0.3125rem;
+    max-width: 0.75rem;
+    max-height: 1.1875rem;
 }
 
 .clickable-dropdown input:checked ~ .clickable-dropdown{
@@ -119,5 +115,39 @@
     .clickable-dropdown {
         color: #F20C90;
         display: block;
+    }
+}
+
+
+@media (min-width: 30.0625rem){
+    .burger-wrapper span{
+        max-width: 0.4375rem;
+        gap: 0.0625rem;
+        height: 0.0625rem;
+    }
+    .burger-menu input{
+        max-width: 1.875rem;
+        max-height: 0.9375rem;
+
+    }
+    .burger-wrapper{
+        max-width: 2.1875rem;
+        max-height: 1.25rem;
+        padding: 0.5rem 0.75rem;
+        border-radius: 0.625rem;
+    }
+}
+
+@media (min-width: 61.875rem){
+    .burger-menu__list{
+        display: inline-flex;
+        min-height: 3.4375rem;
+        gap: 0.625rem;
+        top: 1.875rem;
+        background-color: transparent;
+
+    }
+    .burger-menu input, .burger-menu label, .burger-menu .burger-wrapper{
+        display: none;
     }
 }

@@ -1,73 +1,73 @@
 /*HERO*/
 /*HER0-me*/
 #hero {
-    margin-top: 40px;
+    margin-top: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .hero__me {
-    min-width: 333px;
     background-color: #DDBD8E;
     text-align: center;
-    border-radius: 20px;
+    border-radius: 1.25rem;
     position: relative;
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Ändere von flex-end zu center */
+    justify-content: center;
     align-items: center;
 }
 
 .hero__me h3 {
     font-family: RockoUltraFLF, serif;
     text-transform: uppercase;
-    font-size: 50px;
+    font-size: 3.125em;
     color: white;
     position: absolute;
-    top: 20px;
+    top: 0.4em;
     left: 50%;
     transform: translateX(-50%);
     max-width: 100%
 }
 
 .hero__me img {
-    width: 100%;
+    max-width: 100%;
     vertical-align: bottom;
-    margin-top: 50px;
+    margin-top: 1em;
 }
 
 /*HER0-projects*/
 .hero__projects {
     background-color: #F20C90;
-    border-radius: 25px;
-    margin:20px 0;
-    padding: 15px 17px 25px;
+    border-radius: 1.5625rem;
+    padding: 0.9375rem 1.0625rem 1.5625rem;
 }
 
 .hero__projects h3 {
     font-family: RockoUltraFLF, serif;
     text-transform: uppercase;
-    font-size: 42px;
+    font-size: 2.625rem;
     color: white;
     text-align: center;
 }
 
 .hero__projects p {
     color: white;
-    font-size: 12px;
-    margin-top: 20px;
-    margin-bottom: 13px;
+    font-size: 0.75em;
+    margin: 1.667em 0 1.083em;
 }
 
 .hero__projects__link a {
     font-family: RockoUltraFLF, serif;
-    font-size: 13px;
+    font-size: 0.813em;
     text-transform: uppercase;
     display: inline-block;
     background-color: #F950AD;
     color: white;
-    padding: 15px 0;
-    border-radius: 10px;
+    padding: 1.154em 0;
+    border-radius: 0.769em;
     text-align: center;
-    min-width: 145px;
+    min-width: 49%;
 }
 
 .hero__projects__link .portfolio {
@@ -77,17 +77,16 @@
 
 .hero__projects__link {
     display: flex;
-    gap: 9px;
+    gap: 0.563em;
     justify-content: center;
     align-items: center;
 }
 
 /*HER0-junior*/
 .hero__junior {
-    min-width: 333px;
     background-color: #99D6EA;
     text-align: center;
-    border-radius: 25px;
+    border-radius: 1.5625rem;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -97,10 +96,10 @@
 .hero__junior h3 {
     font-family: RockoUltraFLF, serif;
     text-transform: uppercase;
-    font-size: 42px;
+    font-size: 2.625rem ;
     color: white;
     position: absolute;
-    top: 20px;
+    top:0.476em;
 }
 
 .hero__junior img {
@@ -112,36 +111,29 @@
 @media (min-width: 481px) {
     #hero {
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 10px;
+        gap: 0.625em;
     }
-
     .hero__me {
         grid-area: 1 / 1 / 3 / 2;
-        min-width: 230px;
-        min-height: 270px;
     }
     .hero__me h3{
-        font-size: 40px;
+        font-size: 2.5em;
     }
 
     .hero__projects {
-        grid-area: 1 / 2 / 2 / 3;
+        font-size: 0.5em;
         margin: 0;
-        min-width: 160px;
-        padding: 10px;
+        padding: 1.25em;
 
     }
     .hero__projects__link a {
-        font-size: 7px;
-        padding: 7px 0;
-        border-radius: 7px;
+        font-size: 0.875em;
+        padding: 0.875em 0;
+        border-radius: 0.875em;
         text-align: center;
-        min-width: 75px;
+        min-width: 49%;
     }
-    .hero__projects p{
-        font-size: 8px;
-    }
+
     .hero__projects__link .portfolio {
         background-color: #F950AD;
         color: white;
@@ -149,14 +141,14 @@
 
     .hero__junior {
         grid-area: 2 / 2 / 3 / 3;
-        min-width: 160px;
-
+        min-width: 10.375rem;
     }
     .hero__me, .hero__projects, .hero__junior{
-        border-radius: 10px;
+        border-radius: 0.625rem;
     }
     .hero__projects h3, .hero__junior h3{
-        font-size: 20px;
+        font-size: 1.25rem
+    ;
 
     }
     #hero img {

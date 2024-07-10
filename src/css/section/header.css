@@ -1,0 +1,119 @@
+/* HEADER */
+#header{
+    display: flex;
+    padding: 0.8125rem 1.25rem;
+    background-color: white;
+    border-bottom: #F0F0F0 1px solid;
+    position: sticky;
+    min-width: 335px;
+    min-height: 45px;
+    top: 0;
+    z-index: 2;
+    justify-content:flex-start;
+}
+
+nav{
+    display: flex;
+    min-width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    margin: auto;
+}
+h1{
+    position: absolute;
+    display: block;
+    font-family: RockoUltraFLF, serif;
+    font-size: 2.125em;
+    min-width: 6em;
+    text-transform: uppercase;
+    color: #FF6E0C;
+    text-align: center;
+    margin: 0 80px;
+}
+
+#contact-button{
+    background-color: #F5F5F5;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    min-width: 100%;
+    z-index: 1;
+}
+.contact-button{
+    font-family: RockoUltraFLF, serif;
+    font-size: 0.813em;
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+    background-color: #FF6E0C;
+    display: inline-block;
+    padding: 1.25em 0;
+    width: 90%;
+    border-radius: 4.375em;
+    margin: 1.25em;
+}
+
+
+@media (min-width: 481px){
+    main{
+        padding: 0 7%;
+    }
+
+    #header{
+        padding: 0.8125rem 1.875rem;
+        min-height: 1.25rem;
+        min-width: 90%;
+        align-items: center;
+    }
+
+    h1{
+        font-size: 1.25em;
+        margin: 0 8.5em;
+        min-height: 1.438em;
+    }
+
+    #navigation{
+        display: grid;
+        grid-template-columns: 2fr 10fr 1fr;
+    }
+
+    #contact-button{
+        background-color: transparent;
+        min-width: 2.5em;
+        max-width: 2.5em;
+        position: inherit;
+        justify-self: end;
+    }
+
+    .contact-button{
+        font-size: 0.438em;
+        margin: 0 0 0 1.429em;
+        display: inline-block;
+        padding: 1em 2.143em
+    }
+}
+
+@media (min-width: 990px){
+    #navigation{
+        display: flex;
+        align-items: center;
+        justify-content: inherit;
+    }
+    #navigation a{
+        font-family: RockoUltraFLF, serif;
+        font-size: 0.875em;
+        color: #512D00;
+        text-transform: uppercase;
+    }
+    .burger-menu__list{
+        display: inline-flex;
+        min-height: 3.4375rem;
+        gap: 0.625rem;
+        top: 1.875rem;
+        background-color: transparent;
+    }
+    .burger-menu input, .burger-menu label, .burger-menu .burger-wrapper{
+        display: none;
+    }
+}
