@@ -21,14 +21,14 @@ nav{
     margin: auto;
 }
 h1{
-    position: absolute;
-    display: block;
     font-family: RockoUltraFLF, serif;
     font-size: 2.125em;
-    min-width: 6em;
     text-transform: uppercase;
-    color: #FF6E0C;
     text-align: center;
+    display: block;
+    position: absolute;
+    min-width: 6em;
+    color: #FF6E0C;
     margin: 0 80px;
 }
 
@@ -40,7 +40,7 @@ h1{
     min-width: 100%;
     z-index: 1;
 }
-.contact-button{
+#navigation .contact-button{
     font-family: RockoUltraFLF, serif;
     font-size: 0.813em;
     text-transform: uppercase;
@@ -56,41 +56,34 @@ h1{
 
 
 @media (min-width: 481px){
-    main{
-        padding: 0 7%;
-    }
-
     #header{
         padding: 0.8125rem 1.875rem;
         min-height: 1.25rem;
         min-width: 90%;
         align-items: center;
     }
-
     h1{
         font-size: 1.25em;
         margin: 0 8.5em;
         min-height: 1.438em;
     }
-
     #navigation{
         display: grid;
-        grid-template-columns: 2fr 10fr 1fr;
+        grid-template-columns: 4fr 10fr 1fr;
     }
-
     #contact-button{
         background-color: transparent;
-        min-width: 2.5em;
-        max-width: 2.5em;
         position: inherit;
-        justify-self: end;
     }
-
-    .contact-button{
+    #contact-button .contact-button{
+        display: flex;
+        justify-content: center;
         font-size: 0.438em;
-        margin: 0 0 0 1.429em;
-        display: inline-block;
-        padding: 1em 2.143em
+        margin: 0 0 0 7.429em;
+        padding: 5px 20px;
+        max-width: 2.5em;
+        text-align: center;
+        top: 0;
     }
 }
 

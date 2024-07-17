@@ -8,8 +8,8 @@
     <meta name="keywords" content="Développement Web, Web, développement, HTML, CSS, JS, projet CV, CV, projet">
     <meta name="description" content="Vous pouvez découvrir mon parcours et mes réalisations sur mon site CV.">
     <meta name="author" content="Amélie Siquet">
-    <title>Siquet Amélie</title>
-    <!---<link rel="icon" type="image/svg" href="img/LogoPersonnel.svg">--->
+    <title>Siquet Amélie - cv</title>
+    <link rel="icon" type="image/svg" href="img/MyLogo.svg">
     <link rel="stylesheet" href="src/css/reset.css">
     <link rel="stylesheet" href="src/css/main.css">
 </head>
@@ -67,7 +67,7 @@
             </ul>
         </div>
         <div id="contact-button">
-            <a class="contact-button" href="#contact" title="Contactez-moi!">Contact</a>
+            <a class="contact-button" href="" title="Contactez-moi!">Contact</a>
         </div>
     </nav>
 </header>
@@ -101,11 +101,11 @@
         </article>
 
         <article class="hero__junior">
-            <h3 role="heading" aria-level="3">Junior Developper</h3>
             <a href="#hero" title="Consulter une photo de mon ordinateur">
+                <h3 role="heading" aria-level="3">Junior Developper</h3>
                 <img
                         src="img/JuniorDevelopper.svg"
-                        alt="Une image de mon projet CV"
+                        alt="Une image de mons projet CV"
                         title="Une image de mon projet CV"
                         width="550"
                         height="440"
@@ -117,7 +117,7 @@
     <section id="formation" role="region">
         <h2 role="heading" aria-level="2">Mon<span>parcours</span>scolaire</h2>
         <div class="formation__list">
-            <dl class="formation__list__item">
+            <dl class="formation__list__item dl1">
                 <dt class="formation__list__item__year-cycle">
                     <time datetime="2026-10-20">2026</time>
 
@@ -133,7 +133,7 @@
                     </div>
                 </dd>
             </dl>
-            <dl class="formation__list__item">
+            <dl class="formation__list__item dl2">
                 <dt class="formation__list__item__year-cycle">
                     <time datetime="2025-06-30">2025</time>
                 </dt>
@@ -148,7 +148,7 @@
                     </div>
                 </dd>
             </dl>
-            <dl class="formation__list__item">
+            <dl class="formation__list__item dl3">
                 <dt class="formation__list__item__year-cycle">
                     <time datetime="2022-06-30">2022</time>
                 </dt>
@@ -204,47 +204,55 @@
 
     <section id="about" role="region" class="section">
         <h2 role="heading" aria-level="2" class="visually-hidden">À Propos</h2>
-        <article id="about__accessibility">
-            <img class="about__accessibility__img"
-                 src="img/Accessibilite.svg"
-                 alt="Représentation vectorielle pour l'accessibilité web"
-                 title="Représentation pour l'accessibilité web"
-                 width="550"
-                 height="600"
-            >
-            <img class="about__accessibility__logo"
-                 src="img/AccessibilityLogo.svg"
-                 alt="Icône pour l'accessibilité Web"
-                 title="Icône pour l'accessibilité Web"
-                 width="145"
-                 height="145"
-            >
-            <h3 role="heading" aria-level="3">Accessibilité dans la
-                conception web</h3>
-            <p>Pour moi, l&rsquo;accessibilité pour tous les utilisateurs est primordiale.</p>
-            <a class="more" href="https://www.w3schools.com/accessibility/" title="Savoir plus sur l'accessibilité Wbe">Savoir
-                plus</a>
+        <article id="about__accessibility" class="about__article">
+            <div class="about__img">
+                <img class="about__accessibility__img"
+                     src="img/Accessibilite.svg"
+                     alt="Représentation vectorielle pour l'accessibilité web"
+                     title="Représentation pour l'accessibilité web"
+                     width="550"
+                     height="600"
+                >
+                <img class="about__accessibility__logo logo"
+                     src="img/AccessibilityLogo.svg"
+                     alt="Icône pour l'accessibilité Web"
+                     title="Icône pour l'accessibilité Web"
+                     width="145"
+                     height="145"
+                >
+            </div>
+            <div class="about__content">
+                <h3 role="heading" aria-level="3">Accessibilité dans la
+                    conception web</h3>
+                <p>Pour moi, l&rsquo;accessibilité pour tous les utilisateurs est primordiale.</p>
+                <a class="more" href="https://www.w3schools.com/accessibility/" title="Savoir plus sur l'accessibilité Wbe">Savoir
+                    plus</a>
+            </div>
         </article>
 
-        <article id="about__responsive">
-            <img class="about__responsive__img"
-                 src="img/Responsive.svg"
-                 alt="Représentation vectorielle du Responsive Webdesign"
-                 title="Représentation vectorielle du Responsive Webdesign "
-                 width="550"
-                 height="600"
-            >
-            <img class="about__responsive__logo"
-                 src="img/ResponsiveLogo.svg"
-                 alt="Icône Responsive Webdesign"
-                 title="Icône Responsive Webdesign"
-                 width="145"
-                 height="145"
-            >
-            <h3 role="heading" aria-level="3">Responsive Webdesign</h3>
-            <p>Je maitrise le design adaptable pour différentes tailles d&rsquo;écran.</p>
-            <a class="more" href="https://www.w3schools.com/css/css_rwd_intro.asp"
-               title="Savoir plus sur le Responsive Webdesign">Savoir plus</a>
+        <article id="about__responsive" class="about__article">
+            <div class="about__img">
+                <img class="about__responsive__img"
+                     src="img/Responsive.svg"
+                     alt="Représentation vectorielle du Responsive Webdesign"
+                     title="Représentation vectorielle du Responsive Webdesign "
+                     width="550"
+                     height="600"
+                >
+                <img class="about__responsive__logo logo"
+                     src="img/ResponsiveLogo.svg"
+                     alt="Icône Responsive Webdesign"
+                     title="Icône Responsive Webdesign"
+                     width="145"
+                     height="145"
+                >
+            </div>
+            <div class="about__content">
+                <h3 role="heading" aria-level="3">Responsive Webdesign</h3>
+                <p>Je maitrise le design adaptable pour différentes tailles d&rsquo;écran.</p>
+                <a class="more" href="https://www.w3schools.com/css/css_rwd_intro.asp"
+                   title="Savoir plus sur le Responsive Webdesign">Savoir plus</a>
+            </div>
         </article>
     </section>
 
@@ -291,40 +299,31 @@
             </div>
 
         <div class="slider-button">
-            <span class="dot active" id="prev">
-                <svg xmlns="http://www.w3.org/2000/svg" height="18.662" viewBox="0 0 11.331 18.662">
-                    <path id="Path_286" data-name="Path 286" class="cls-1" d="M8.5,15l-6.5-6.5,6.5-6.5" fill="none"
-                      stroke="#AAAAAA" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
-                 </svg>
-            </span>
-            <span class="dot" id="next">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="11.331" height="18.662" viewBox="0 0 11.331 18.662">
-                        <path id="Path_286" data-name="Path 286" d="M-4289.917,4107.585l6.5,6.5-6.5,6.5"
-                              transform="translate(4292.746 -4104.757)" fill="none" stroke="#AAAAAA"
-                              stroke-linecap="round"
-                              stroke-linejoin="round" stroke-width="4"></path>
-                    </svg>
-               </span>
+            <span class="dot active" id="prev"><</span>
+            <span class="dot" id="next">></span>
         </div>
     </section>
 
     <section id="contact" role="region" class="section">
         <h2 role="heading" aria-level="2">Contact</h2>
-        <img
-                src="img/Map.svg"
-                alt="Carte pour trouver mon adresse"
-                title="Carte pour trouver mon adresse"
-                width="430"
-                height="430"
-        >
-        <img
-                class="contact__logo"
-                src="img/LogoPersonnel.svg"
-                alt="Mon logo personnel"
-                title="Mon logo personnel"
-                width="140"
-                height="140"
-        >
+        <div class="map">
+            <img
+                    src="img/Map.svg"
+                    alt="Carte pour trouver mon adresse"
+                    title="Carte pour trouver mon adresse"
+                    width="430"
+                    height="430"
+            >
+            <img
+                    class="contact__logo"
+                    src="img/LogoPersonnel.svg"
+                    alt="Mon logo personnel"
+                    title="Mon logo personnel"
+                    width="140"
+                    height="140"
+            >
+        </div>
+
         <dl class="contact__list">
             <dt class="contact__type">Par téléphone</dt>
             <dd class="contact__info">
@@ -337,8 +336,7 @@
                 <address>ameliesiquet@gmail.com</address>
             </dd>
         </dl>
-
-        <a class="contact__contact-button" href="" title="Contactez-moi!">Contact</a>
+        <a class="contact-button" href="" title="Contactez-moi!">Contact</a>
         <div id="contact__form" class="visually-hidden">
             <div class="contact__form__close">&times;</div>
             <form action="#formContact" method="post" id="formContact">

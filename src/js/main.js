@@ -42,21 +42,22 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 function openContactForm(){
-    document.addEventListener('DOMContentLoaded', function() {
-        const contactButton = document.querySelector('.contact__contact-button');
+        const contactButtons = document.querySelectorAll('.contact-button');
         const contactForm = document.getElementById('contact__form');
 
-        contactButton.addEventListener('click', function(event) {
-            event.preventDefault();  // Verhindert das Standardverhalten des Links
-            contactForm.classList.toggle('visually-hidden');  // Toggle die Klasse 'hidden'
-        });
+        contactButtons.forEach((contactButton)=>{
+            contactButton.addEventListener('click', function(event) {
+                event.preventDefault();
+                contactForm.classList.toggle('visually-hidden');  // Toggle die Klasse 'hidden'
+            });
+        })
+
 
         const close = document.querySelector('.contact__form__close')
         close.addEventListener('click', (e)=>{
             e.preventDefault();
             contactForm.classList.toggle('visually-hidden')
         })
-    });
 }
 openContactForm();
 

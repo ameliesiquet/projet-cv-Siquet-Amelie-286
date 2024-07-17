@@ -49,10 +49,14 @@ img{
 }
 
 @media (min-width: 481px) {
-
-    .section {
+    .section{
         margin: 0;
+
     }
+    main{
+        padding: 0 7%;
+    }
+
 }
 
 

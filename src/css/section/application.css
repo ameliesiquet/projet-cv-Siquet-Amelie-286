@@ -1,9 +1,9 @@
 /* APPLICATION*/
 #application{
     background-color: #71C5E8;
-    border-radius: 25px;
-    margin-top: 70px;
-    padding: 35px 0 210px;
+    border-radius: 1.5625rem;
+    margin-top: 4.375rem;
+    padding: 2.1875rem 0 13.125rem;
     text-align: center;
     position: relative;
     overflow: hidden;
@@ -11,29 +11,29 @@
 }
 #application h2{
     font-family: RockoUltraFLF,serif;
-    font-size: 45px;
+    font-size: 2.8125rem;
     text-transform: uppercase;
     color: white;
-    margin-bottom: 37px;
+    margin-bottom: 2.3125rem;
 
 }
 #application h3{
     font-family: RockoUltraFLF,serif;
-    font-size: 18px;
+    font-size: 1.125rem;
     text-transform:uppercase;
     color: white;
 }
 #application p{
-    font-size: 12px;
-    line-height: 20px;
+    font-size: 0.75rem;
+    line-height: 1.25rem;
     color: white;
     display: inline-block;
-    margin:26px 0 34px ;
-    max-width: 187px;
+    margin:1.625rem 0 2.125rem ;
+    max-width: 11.6875rem;
 }
 
 .application__img{
-    max-width: 182px;
+    max-width: 11.375rem;
     position: absolute;
     bottom: -30%;
     left: 25%;
@@ -41,5 +41,58 @@
 .application__logos{
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 1.25rem;
+}
+
+@media (min-width: 30rem){
+    #application{
+        display: grid;
+        grid-template-columns: 0.4fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas:
+        "img h2"
+        "img content";
+        grid-column-gap: 1.875rem;
+        margin: 5.125rem 0;;
+        padding: 0;
+        text-align: left;
+        border-radius: 1rem;
+    }
+    #application h2{
+        font-size: 2.5rem;
+        grid-area: h2;
+        align-self: end;
+        margin: 0.625rem 0 1.25rem;
+    }
+    .application__content{
+        grid-area: content;
+    }
+    #application h3{
+        font-size: 0.8125rem;
+    }
+    #application p{
+        font-size: 0.5625rem;
+        line-height: 0.8125rem;
+        margin: 0.9375rem 0;
+    }
+    .application__img__container{
+        grid-area: img;
+        justify-self: center;
+        align-self: center;
+    }
+    .application__img{
+        position: inherit;
+        max-width: 9.375rem;
+        padding: 1.25rem 0 1.25rem 1.875rem;
+    }
+    .application__logos {
+        flex-direction: row;
+        gap: 0.9375rem;
+    }
+    .application__logos a{
+        max-width: 4.375rem;
+    }
+    .application__logos img{
+        max-width: 100%;
+    }
 }

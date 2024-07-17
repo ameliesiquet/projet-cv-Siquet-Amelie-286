@@ -7,17 +7,15 @@
     text-align: center;
     margin-top: 80px;
 }
-#contact img{
-    max-width: 260px;
-    max-height: 260px;
+.map img{
+    max-width: 100%;
     background-color: white;
     border-radius: 50%;
     position: relative;
     margin: 43px 0 28px;
 }
 #contact .contact__logo{
-    max-width: 77px;
-    max-height: 77px;
+    max-width: 20%;
     position: absolute;
     right: 50px;
 }
@@ -29,7 +27,7 @@
 }
 
 
-.contact__contact-button{
+#contact .contact-button{
     font-family: RockoUltraFLF, serif;
     font-size: 13px;
     text-transform: uppercase;
@@ -41,12 +39,67 @@
     margin-top: 37px;
 }
 
-#contact .contact__type{
+.contact__type{
     font-family: RockoUltraFLF, serif;
     font-size: 19px;
     text-transform: uppercase;
     color: white;
 }
-#contact .contact__info{
+.contact__info{
     display: none;
+}
+
+@media (min-width: 480px) {
+    #contact{
+        display: grid;
+        gap: 0 20px;
+        text-align: left;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 'map h2'
+    'map list'
+    'map button';
+        align-items: center;
+        border-radius: 1rem;
+    }
+    #contact h2 {
+        grid-area: h2;
+        font-size: 2.2rem;
+    }
+    .map{
+        grid-area: map;
+        width: 70%;
+    }
+    .map img{
+        max-width: 130%;
+        position: relative;
+        margin: 0;
+    }
+    #contact .contact__logo{
+        max-width: 10%;
+        position: absolute;
+        left: 200px;
+    }
+    .contact__list{
+        grid-area: list;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin: 10px 0;
+    }
+    .contact__type{
+        font-size: 12px;
+    }
+    #contact .contact-button{
+        grid-area: button;
+        font-size: 10px;
+        padding: 12px 25px;
+        justify-self: start;
+        margin: 0;
+    }
+    #contact .contact__info{
+        display: block;
+        color: white;
+        font-size: 10px;
+
+    }
 }
