@@ -44,7 +44,7 @@
     gap: 1.25rem;
 }
 
-@media (min-width: 30rem){
+@media (min-width: 480px){
     #application{
         display: grid;
         grid-template-columns: 0.4fr 1fr;
@@ -94,5 +94,10 @@
     }
     .application__logos img{
         max-width: 100%;
+    }
+}
+@media (min-width: 680px) {
+    #application{
+        grid-column-gap: 3rem;
     }
 }

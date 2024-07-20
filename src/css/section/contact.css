@@ -6,8 +6,9 @@
     padding: 38px 36px 58px;
     text-align: center;
     margin-top: 80px;
+    position: relative;
 }
-.map img{
+.map__img{
     max-width: 100%;
     background-color: white;
     border-radius: 50%;
@@ -17,7 +18,9 @@
 #contact .contact__logo{
     max-width: 20%;
     position: absolute;
-    right: 50px;
+    right: 10%;
+    top: 20%;
+    border-radius: 50%;
 }
 #contact h2{
     font-family: RockoUltraFLF, serif;
@@ -29,23 +32,25 @@
 
 #contact .contact-button{
     font-family: RockoUltraFLF, serif;
-    font-size: 13px;
+    font-size: 14px;
     text-transform: uppercase;
     color: #F20C90;
     background-color: white;
     padding: 17px 62px;
     border-radius: 65px;
     display: inline-block;
-    margin-top: 37px;
 }
 
-.contact__type{
+#contact .contact__type{
     font-family: RockoUltraFLF, serif;
     font-size: 19px;
     text-transform: uppercase;
     color: white;
 }
-.contact__info{
+#contact .contact__list{
+    margin: 0 0 20px;
+}
+#contact .contact__info{
     display: none;
 }
 
@@ -69,24 +74,27 @@
         grid-area: map;
         width: 70%;
     }
-    .map img{
+    .map__img{
         max-width: 130%;
         position: relative;
         margin: 0;
     }
     #contact .contact__logo{
-        max-width: 10%;
+        max-width: 13%;
         position: absolute;
-        left: 200px;
+        left: 29%;
+        top: 26%;
+        box-shadow: 4px 4px 5px rgba(0,0,0,.25);
     }
-    .contact__list{
+
+    #contact .contact__list{
         grid-area: list;
         display: flex;
         flex-direction: column;
         gap: 10px;
-        margin: 10px 0;
+        margin: 20px 0;
     }
-    .contact__type{
+    #contact .contact__type{
         font-size: 12px;
     }
     #contact .contact-button{
@@ -100,6 +108,12 @@
         display: block;
         color: white;
         font-size: 10px;
-
+        line-height: 13px;
+    }
+}
+@media (min-width: 680px) {
+    #contact .contact__logo{
+        left: 35%;
+        top: 13%;
     }
 }

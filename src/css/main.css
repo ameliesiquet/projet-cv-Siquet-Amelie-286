@@ -58,8 +58,16 @@ img{
     }
 
 }
-
-
+@media (min-width: 680px){
+    main{
+        padding: 0 9%;
+    }
+}
+@media (min-width: 960px){
+    main{
+        padding: 0 10%;
+    }
+}
 
 
 

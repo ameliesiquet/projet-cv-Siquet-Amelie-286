@@ -97,7 +97,6 @@
         font-size: 0.5em;
         margin: 0;
         padding: 1.25em;
-
     }
     .hero__projects__link a {
         font-size: 0.875em;
@@ -123,5 +122,25 @@
     #hero img {
         max-width: 100%;
         vertical-align: bottom;
+    }
+}
+
+@media (min-width: 680px) {
+    .hero__me h3{
+        font-size: 3em;
+    }
+    .hero__projects h3, .hero__junior h3{
+        font-size: 1.7rem;
+    }
+    .hero__projects {
+        font-size: 0.7em;
+        padding: 1.5em;
+    }
+    .hero__projects p{
+        margin: 2em 0;
+    }
+
+    .hero__me, .hero__projects, .hero__junior {
+        border-radius: 1.1rem;
     }
 }

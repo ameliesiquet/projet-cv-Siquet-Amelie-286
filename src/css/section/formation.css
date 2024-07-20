@@ -104,6 +104,7 @@
             "dl2 dl2 dl2 ."
             ". dl3 dl3 dl3";
         grid-area: formation;
+        margin: 0;
     }
     .formation__list__item {
         padding: 0.8rem;
@@ -125,8 +126,8 @@
         content: '';
         position: absolute;
         top: -6.25rem;
-        left: -2.5rem;
-        right: -2.5rem;
+        left: -4.5rem;
+        right: -4.5rem;
         bottom: -12.5rem;
         border-bottom-left-radius: 50% 1.25rem;
         border-bottom-right-radius: 50% 1.25rem;
@@ -138,10 +139,32 @@
         font-size: 0.5rem;
         justify-self: start;
         width: auto;
-        padding: 0.625rem 0.9375rem;
+        padding: 0.725rem 0.9375rem;
     }
     .dl1 { grid-area: dl1; }
     .dl2 { grid-area: dl2; }
     .dl3 { grid-area: dl3; }
 }
+
+@media (min-width: 680px) {
+    #formation h2 {
+        font-size: 2.2rem;
+        margin-bottom: 20px;
+    }
+    .formation__list__item__title {
+        font-size: 0.9rem;
+    }
+    .formation__list__item__content {
+        font-size: 0.6rem;
+    }
+    .formation__list__item__year-cycle {
+        font-size: 0.7rem;
+        padding: 1.2rem 0.6rem;
+    }
+    .formation__list__item {
+        grid-column-gap: 0.8rem;
+        border-radius: 1rem;
+    }
+}
+
 

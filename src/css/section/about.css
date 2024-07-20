@@ -55,11 +55,18 @@
     }
     .about__accessibility__img , .about__responsive__img{
         cursor: pointer;
+        position: relative;
     }
     .about__accessibility__logo, .about__responsive__logo{
         max-width: 30%;
-        left: 130px;
-        top: -180px;
+    }
+    .about__accessibility__logo{
+        left: 76%;
+        top: -76%;
+    }
+    .about__responsive__logo{
+        left: -10%;
+        top: -22%;
     }
     #about h3{
         font-size: 22px;
@@ -69,7 +76,7 @@
         margin: 15px 0 20px;
     }
     #about a{
-        width: 40%;
+        width: 35%;
         font-size: 8px;
         padding: 10px 0;
     }
@@ -84,8 +91,22 @@
     #about__responsive{
         grid-template-columns: 1fr 0.7fr;
     }
-    .about__responsive__logo{
-        left: -20px;
-        top: -50px;
+
+}
+
+@media (min-width: 680px) {
+    #about h3 {
+        font-size: 30px;
     }
+    #about p {
+        font-size: 13px;
+        line-height: 20px;
+        margin: 20px 0 25px;
+    }
+    #about a {
+        width: 40%;
+        font-size: 11px;
+        padding: 10px 0;
+    }
+
 }
