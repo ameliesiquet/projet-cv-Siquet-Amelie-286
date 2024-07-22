@@ -117,3 +117,28 @@
         top: 13%;
     }
 }
+@media (min-width: 990px) {
+    #contact h2 {
+        font-size: 3rem;
+    }
+    .map__img {
+        max-width: 120%;
+    }
+    #contact .contact__logo {
+        max-width: 12%;
+    }
+    #contact .contact__type {
+        font-size: 15px;
+    }
+    #contact .contact__info {
+        font-size: 11px;
+        line-height: 17px;
+    }
+    #contact .contact__list{
+        margin: 0;
+    }
+    #contact .contact-button {
+        font-size: 13px;
+        padding: 14px 30px;
+    }
+}

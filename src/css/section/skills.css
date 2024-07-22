@@ -117,15 +117,15 @@
         content: '';
         position: absolute;
         top: -1.3rem;
-        left: -4.5rem;
-        right: -4.5rem;
+        left: -2.5rem;
+        right: -2.5rem;
         bottom: -1.5rem;
         background-color: #F5F5F5;
         z-index: -1;
     }
     #skills{
         display: grid;
-        grid-template-columns: 1fr 0.3fr;
+        grid-template-columns: 1fr 0.2fr;
         grid-template-areas: 'h2 a'
     'slider slider'
     'button button';
@@ -191,6 +191,10 @@
 
 }
 @media (min-width: 680px) {
+    #skills::before {
+        left: -12%;
+        right: -12%;
+    }
     #skills h2 {
         font-size: 2.2rem;
     }
@@ -204,4 +208,27 @@
         font-size: 14px;
         line-height: 17px;
     }
+}
+@media (min-width: 990px) {
+    #skills::before{
+        left: -14%;
+        right: -14%;
+    }
+    #skills h2 {
+        font-size: 2.5rem;
+    }
+    .slider-button {
+        position: absolute;
+        left: -14%;
+        top: 50%;
+        z-index: 2;
+        display: flex;
+        gap: 85%;
+    }
+    .slider-button span {
+        font-size: 35px;
+        margin: 0;
+        padding: 4px 16px;
+    }
+
 }

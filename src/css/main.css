@@ -56,7 +56,19 @@ img{
     main{
         padding: 0 7%;
     }
-
+    .hero__me:hover, .hero__junior:hover, .hero__projects:hover, .formation__list__item:hover, #application:hover, #contact:hover, .footer__container__personal-logo:hover  {
+        transform: scale(0.98);
+        transition: transform 0.2s ease-in-out;
+    }
+    .about__accessibility__img:hover, .about__accessibility__logo:hover, .about__responsive__img:hover, .about__responsive__logo:hover, .map img:hover{
+        transform: scale(0.90);
+        transition: transform 0.3s ease-in-out;
+    }
+    .skills__block:hover{
+        transform: scale(0.94);
+        transition: transform 0.3s ease-in-out;
+        border: 4px solid #F20C90;
+    }
 }
 @media (min-width: 680px){
     main{

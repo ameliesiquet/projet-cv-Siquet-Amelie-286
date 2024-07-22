@@ -101,3 +101,21 @@
         grid-column-gap: 3rem;
     }
 }
+@media (min-width: 990px) {
+    #application{
+        grid-template-columns: 0.8fr 1fr;
+        grid-column-gap: 3rem;
+    }
+    .application__img {
+        max-width: 12rem;
+    }
+    #application h2 {
+        font-size: 4.5rem;
+    }
+    .application__logos {
+           gap: 2.9rem;
+    }
+    .application__logos img {
+        max-width: 130%;
+    }
+}

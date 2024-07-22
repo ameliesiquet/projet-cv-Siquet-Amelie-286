@@ -8,9 +8,9 @@
 }
 .footer__container__personal-logo{
     position: absolute;
-    width: 200px;
-    top:-50px;
-    margin: 0 70px;
+    width: 45%;
+    top: -15%;
+    margin: 0px 22%;
 }
 .footer__container__navigation{
     display: flex;
@@ -85,6 +85,7 @@
     }
     .footer__container__navigation__item{
         background-color: transparent;
+        align-content: center;
     }
     .footer__container__navigation__item a{
         font-size: 9px;
@@ -92,7 +93,7 @@
     }
     .footer__container__personal-logo{
         max-width: 15%;
-        margin: 25px;
+        margin: 0;
         border-radius: 50%;
         box-shadow: 4px 4px 5px rgba(0,0,0,.25);
     }
@@ -107,5 +108,34 @@
     }
     .footer__legal{
         font-size: 7px;
+    }
+}
+@media (min-width: 990px) {
+    .footer__container__personal-logo {
+        max-width: 12%;
+        margin: 25px 0 25px 70px;
+        top: -100%;
+    }
+    .footer__container {
+        gap: 20%;
+    }
+    .footer__container__navigation {
+        flex-direction: row;
+        margin-left: 30%;
+        gap: 30px;
+    }
+    .footer__container__social a {
+        width: 27px;
+        height: 28px;
+    }
+    .footer__container__navigation__item a {
+        font-size: 13px;
+        padding: 0;
+    }
+    .footer__container__social {
+        gap: 10px;
+    }
+    .footer__legal {
+        font-size: 10px;
     }
 }

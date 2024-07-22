@@ -76,7 +76,9 @@
 }
 .hero__junior h3 {
     position: absolute;
-    top:0.476em;
+    top: 0.4em;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 /* DESKTOP */
@@ -97,6 +99,7 @@
         font-size: 0.5em;
         margin: 0;
         padding: 1.25em;
+
     }
     .hero__projects__link a {
         font-size: 0.875em;
@@ -105,6 +108,12 @@
         text-align: center;
         min-width: 49%;
     }
+    .hero__projects__link a:hover {
+        transition: transform .2s,transform .2s ease-in-out;
+        background-color: white;
+        color: #F20C90;
+    }
+
     .hero__projects__link .portfolio {
         background-color: #F950AD;
         color: white;
@@ -123,6 +132,7 @@
         max-width: 100%;
         vertical-align: bottom;
     }
+
 }
 
 @media (min-width: 680px) {
@@ -142,5 +152,17 @@
 
     .hero__me, .hero__projects, .hero__junior {
         border-radius: 1.1rem;
+    }
+}
+@media (min-width: 990px) {
+    .hero__me h3 {
+        font-size: 4em;
+    }
+    .hero__projects h3, .hero__junior h3{
+        font-size: 2.2rem;
+    }
+    .hero__projects {
+        font-size: 1em;
+        padding: 1.5em;
     }
 }

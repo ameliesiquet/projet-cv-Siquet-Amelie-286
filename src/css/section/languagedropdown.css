@@ -62,4 +62,10 @@
         top: -0.1rem;
     }
 }
-
+@media (min-width: 990px) {
+    .language-dropdown{
+        min-width: 2rem;
+        left: 85%;
+        top: -0.01rem;
+    }
+}
