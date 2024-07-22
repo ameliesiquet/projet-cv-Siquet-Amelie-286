@@ -1,21 +1,20 @@
-/*ABOUT*/
 #about{
-    margin-top: 60px;
+    margin-top: 3.75rem;
 }
 #about__accessibility h3{
     font-family: RockoUltraFLF,serif;
-    font-size: 34px;
+    font-size: 2.125rem;
     color: #F20C90;
 }
 #about__responsive h3{
     font-family: RockoUltraFLF,serif;
-    font-size: 34px;
+    font-size: 2.125rem;
     color: #FF6E0C;
 }
 #about p {
-    font-size: 17px;
+    font-size: 1.0625rem;
     color: #AAAAAA;
-    margin: 30px 0;
+    margin: 1.875rem 0;
 }
 .about__accessibility__img, .about__responsive__img{
     width: 100%;
@@ -24,33 +23,32 @@
 .about__accessibility__logo, .about__responsive__logo{
     background-color: #FF6E0C;
     border-radius: 50%;
-    max-width: 105px;
+    max-width: 6.5625rem;
     position: relative;
-    left: 230px;
-    bottom: 50px;
+    left: 14.375rem;
+    bottom: 3.125rem;
 }
 .about__responsive__logo{
     background-color: #F20C90;
 }
-
 #about a{
     font-family: RockoUltraFLF, serif;
-    font-size: 13px;
+    font-size: 0.8125rem;
     text-transform: uppercase;
     text-align: center;
     color: white;
     background-color: #FF6E0C;
     display: inline-block;
-    padding: 20px 0;
+    padding: 1.25rem 0;
     width: 100%;
-    border-radius: 70px;
+    border-radius: 4.375rem;
 }
 
 @media (min-width: 480px) {
     .about__article{
         display: grid;
         grid-template-columns: 0.7fr 1fr;
-        gap: 50px;
+        gap: 3.125rem;
         align-self: center;
     }
     .about__accessibility__img , .about__responsive__img{
@@ -69,21 +67,21 @@
         top: -22%;
     }
     #about h3{
-        font-size: 22px;
+        font-size: 1.375rem;
     }
     #about p{
-        font-size: 10px;
-        margin: 15px 0 20px;
+        font-size: 0.625rem;
+        margin: 0.9375rem 0 1.25rem;
     }
     #about a{
         width: 30%;
-        font-size: 8px;
-        padding: 10px 0;
+        font-size: 0.5rem;
+        padding: 0.625rem 0;
     }
     .about__content{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
     #about__responsive .about__content {
         order: -1;
@@ -96,17 +94,17 @@
 
 @media (min-width: 680px) {
     #about h3 {
-        font-size: 30px;
+        font-size: 1.875rem;
     }
     #about p {
-        font-size: 13px;
-        line-height: 20px;
-        margin: 20px 0 25px;
+        font-size: 0.8125rem;
+        line-height: 1.25rem;
+        margin: 1.25rem 0 1.5625rem;
     }
     #about a {
         width: 30%;
-        font-size: 11px;
-        padding: 10px 0;
+        font-size: 0.6875rem;
+        padding: 0.625rem 0;
     }
 
 }

@@ -41,24 +41,27 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-function openContactForm(){
-        const contactButtons = document.querySelectorAll('.contact-button');
-        const contactForm = document.getElementById('contact__form');
+function openContactForm() {
+    const contactButtons = document.querySelectorAll('.contact-button');
+    const contactForm = document.getElementById('contact__form');
+    const body = document.body;
 
-        contactButtons.forEach((contactButton)=>{
-            contactButton.addEventListener('click', function(event) {
-                event.preventDefault();
-                contactForm.classList.toggle('visually-hidden');  // Toggle die Klasse 'hidden'
-            });
-        })
+    contactButtons.forEach((contactButton) => {
+        contactButton.addEventListener('click', function(event) {
+            event.preventDefault();
+            contactForm.classList.toggle('visually-hidden');
+            contactForm.classList.toggle('open');
+            body.classList.toggle('form-open'); // Toggle form-open class on body
+        });
+    });
 
-
-        const close = document.querySelector('.contact__form__close')
-        close.addEventListener('click', (e)=>{
-            e.preventDefault();
-            contactForm.classList.toggle('visually-hidden')
-        })
+    const close = document.querySelector('.contact__form__close')
+    close.addEventListener('click', (e) => {
+        e.preventDefault();
+        contactForm.classList.toggle('visually-hidden')
+    })
 }
+
 openContactForm();
 
 

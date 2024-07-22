@@ -69,7 +69,6 @@
     justify-content: center;
     align-items: center;
 }
-
 .hero__junior {
     background-color: #99D6EA;
     border-radius: 1.5625rem;
@@ -81,7 +80,6 @@
     transform: translateX(-50%);
 }
 
-/* DESKTOP */
 @media (min-width: 481px) {
     #hero {
         display: grid;
@@ -132,7 +130,6 @@
         max-width: 100%;
         vertical-align: bottom;
     }
-
 }
 
 @media (min-width: 680px) {
