@@ -72,14 +72,19 @@ img{
         border: 0.25rem solid #F20C90;
     }
 }
-@media (min-width: 990px){
+@media (min-width: 680px){
     main{
         padding: 0 9%;
     }
 }
-@media (min-width: 60rem){
+@media (min-width: 990px){
     main{
         padding: 0 10%;
+    }
+}
+@media (min-width: 1380px){
+    main{
+        padding: 0 12%;
     }
 }
 

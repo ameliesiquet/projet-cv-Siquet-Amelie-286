@@ -47,13 +47,13 @@
     text-indent: -624.9375rem;
 }
 .footer__container__social__item a.github {
-    background-image: url("/img/GithubLogo.svg");
+    background-image: url("/assets/img/GithubLogo.svg");
 }
 .footer__container__social__item a.facebook {
-    background-image: url("/img/FacebookLogo.svg");
+    background-image: url("/assets/img/FacebookLogo.svg");
 }
 .footer__container__social__item a.instagram {
-    background-image: url("/img/InstaramLogo.svg");
+    background-image: url("/assets/img/InstaramLogo.svg");
 }
 .footer__legal{
     font-size: 0.625rem;

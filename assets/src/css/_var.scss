@@ -1,0 +1,18 @@
+/* COLORS */
+$white: #FFFFFF;
+$pink: #F20C90;
+$lightpink:#F950AD;
+$orange: #FF6E0C;
+$lightblue: #99D6EA;
+$beige: #DDBD8E;
+
+
+/* SCREEN SIZE */
+$med_screen: 767px;
+$wide_screen: 991px;
+$wider_screen: 1280px;
+
+@mixin scale-effect($scale, $transition-time) {
+  transform: scale($scale);
+  transition: transform $transition-time ease-in-out;
+}
